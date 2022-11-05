@@ -1,0 +1,61 @@
+.menu {
+  margin: 0 rem(30px);
+  padding-top: rem(4px);
+
+  @include tablets {
+    display: none;
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  &__item {
+    margin-right: rem(22px);
+    margin-bottom: rem(10px);
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__link {
+    font-size: rem(18px);
+    line-height: rem(30px);
+    color: $black;
+    text-decoration: none;
+    white-space: nowrap;
+  }
+}
+
+
+.menu--768 {
+
+  @include tablets {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 94%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.menu--768 .menu__list {
+  flex-direction: column;
+}
+
+.menu--768 .menu__item {
+  margin-right: 0;
+  margin-bottom: rem(5px);
+}
+
+.menu--768 .menu__link {
+  font-size: rem(36px);
+  line-height: rem(72px);
+}

@@ -1,0 +1,78 @@
+.hero {
+  background: $white-background;
+  background-size: cover;
+  height: 100%;
+  min-height: rem(652px);
+
+  @include tablets {
+    position: relative;
+
+    &:before {
+      content: "";
+      width: 100%;
+      height: rem(92px);
+      min-width: 20rem;
+      top: 0;
+      background-color: $white;
+      display: flex;
+      position: absolute;
+    }
+
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    padding: rem(24px) 0 rem(65px);
+  }
+
+  &__title-section {
+    width: 45%;
+
+    @include tablets {
+      width: 100%;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+
+    }
+  }
+
+  &__icon-section {
+    @include tablets {
+      display: none;
+    }
+  }
+
+  &__main-title {
+    @include h1;
+    color: $black-h;
+    margin-bottom: rem(15px);
+    text-transform: uppercase;
+
+    @include phones {
+      font-size: rem(40px);
+      line-height: rem(36px);
+    }
+  }
+
+  &__title-text {
+    @include Body1Semibold-Regular;
+    font-size: rem(21px);
+    margin-bottom: rem(39px);
+
+    @include tablets {
+      padding: 0 25%;
+    }
+
+    @include phones {
+      padding: 0 14%;
+      font-size: rem(18px);
+    }
+  }
+}

@@ -1,0 +1,117 @@
+$containerWidth: 1100px;
+$baseFontSize: 18px;
+
+//breakpoints
+
+$tablets: 768px;
+$phones: 480px;
+
+//mixin
+
+@mixin h1 {
+  color: $black-h;
+  font-size: rem(48px);
+  font-weight: 700;
+  line-height: rem(52px);
+  text-transform: uppercase;
+}
+
+@mixin h2 {
+  color: $black-h;
+  font-size: rem(48px);
+  font-weight: 700;
+  line-height: rem(52px);
+}
+
+@mixin h3 {
+  color: $black-h;
+  font-size: rem(24px);
+  font-weight: 700;
+  line-height: rem(28px);
+}
+
+@mixin Body2Bold {
+  color: $black-h;
+  font-size: $baseFontSize;
+  font-weight: 700;
+  line-height: rem(22px);
+}
+
+@mixin Body2Semibold {
+  color: $black-h;
+  font-size: $baseFontSize;
+  font-weight: 400;
+  line-height: rem(24px);
+}
+
+@mixin Body2Regular-Light {
+  color: $black-h;
+  font-size: rem(16px);
+  font-weight: 400;
+  line-height: rem(19px);
+}
+
+@mixin Body1Semibold-Regular {
+  color: $black-h;
+  font-size: rem(16px);
+  font-weight: 400;
+  line-height: rem(24px);
+}
+
+// colors
+
+$red: #E01F3D;
+$gray: #666666;
+$black: #292929;
+$white: #FFFFFF;
+$red-btn: #CA1B36;
+$black-text: #000000;
+$white-background: #F5F5F5;
+$black-h: #303236;
+
+//z-indexs
+
+$z-fixed-menu: 100;
+
+//media
+
+@import "./media/_media.scss";
+
+//setup
+
+@import url("https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap");
+@import "./layout/_layout.scss";
+
+// components
+
+@import "./components/_hero.scss";
+@import "./components/_header.scss";
+@import "./components/_asides.scss";
+@import "./components/_aside.scss";
+@import "./components/_menu.scss";
+@import "./components/_contacts.scss";
+@import "./components/_logo.scss";
+@import "./components/_header.scss";
+@import "./components/_container.scss";
+@import "./components/_btn.scss";
+@import "./components/_section.scss";
+@import "./components/_headline.scss";
+@import "./components/_benefit.scss";
+@import "./components/_benefits.scss";
+@import "./components/_reviews.scss";
+@import "./components/_form.scss";
+@import "./components/_radio.scss";
+@import "./components/_reviews-section.scss";
+@import "./components/_fixed-menu.scss";
+@import "./components/_hamburger.scss";
+@import "./components/_footer.scss";
+@import "./components/_socials.scss";
+@import "./components/_overlay.scss";
+@import "./components/_section-slider.scss";
+@import "./components/_slider-container.scss";
+@import "./components/_slider.scss";
+@import "./components/_slider-control.scss";
+@import "./components/_team.scss";
+@import "./components/_modal.scss";
+@import "./components/_products-menu-section.scss";
+@import "./components/_products-menu.scss";

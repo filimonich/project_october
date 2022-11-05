@@ -1,0 +1,38 @@
+.contacts {
+  &__tel {
+    @include Body2Bold;
+    font-size: rem(22px);
+    line-height: rem(30px);
+    color: $white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+  }
+
+  &__icon {
+    flex-shrink: 0;
+
+  }
+
+  &__icon-elem {
+    width: rem(14px);
+    height: rem(14px);
+    margin-right: rem(8px);
+  }
+
+  &__icon-elem--color--white {
+    fill: $white;
+  }
+  
+  &__text {
+    @include Body1Semibold-Regular;
+    font-family: "Play";
+    font-style: normal;
+  }
+
+  &__text--color--black {
+    color: $black;
+  }
+
+}

@@ -1,0 +1,39 @@
+.section {
+  // height: 100vh;
+  height: 100%;
+  min-height: rem(650px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  &__title {
+    @include h3;
+    font-size: rem(48px);
+    margin-bottom: rem(60px);
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  &__title--white {
+    color: $white;
+
+    @include phones {
+      margin-bottom: rem(40px);
+      font-size: rem(40px);
+      line-height: rem(40px);
+    }
+  }
+
+  &__title-team{
+    margin-bottom: rem(60px);
+  }
+
+  &__title-reviews {
+
+    @include phones {
+      margin-bottom: rem(26px);
+      font-size: rem(40px);
+      line-height: rem(36px);
+    }
+  }
+}

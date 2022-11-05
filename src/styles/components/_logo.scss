@@ -1,0 +1,9 @@
+.logo {
+  vertical-align: middle;
+  &__img {
+    margin-right: 0;
+    width: rem(40px);
+    height: rem(40px);
+    fill: $red;
+  }
+}
