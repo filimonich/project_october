@@ -1,0 +1,11 @@
+.asides {
+  display: flex;
+
+  &__item {
+    margin-right: rem(40px);
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}

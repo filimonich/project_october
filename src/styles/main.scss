@@ -1,4 +1,4 @@
-$containerWidth: 1100px;
+$containerWidth: 915px;
 $baseFontSize: 18px;
 
 //breakpoints
@@ -9,7 +9,7 @@ $phones: 480px;
 //mixin
 
 @mixin h1 {
-  color: $black-h;
+  color: $black-text;
   font-size: rem(48px);
   font-weight: 700;
   line-height: rem(52px);
@@ -17,45 +17,53 @@ $phones: 480px;
 }
 
 @mixin h2 {
-  color: $black-h;
+  color: $black-text;
   font-size: rem(48px);
   font-weight: 700;
   line-height: rem(52px);
 }
 
 @mixin h3 {
-  color: $black-h;
+  color: $black-text;
   font-size: rem(24px);
   font-weight: 700;
   line-height: rem(28px);
 }
 
 @mixin Body2Bold {
-  color: $black-h;
+  color: $black-text;
   font-size: $baseFontSize;
   font-weight: 700;
   line-height: rem(22px);
 }
 
 @mixin Body2Semibold {
-  color: $black-h;
+  color: $black-text;
   font-size: $baseFontSize;
   font-weight: 400;
   line-height: rem(24px);
 }
 
-@mixin Body2Regular-Light {
-  color: $black-h;
+@mixin Body2Regular {
+  color: $black-text;
   font-size: rem(16px);
   font-weight: 400;
-  line-height: rem(19px);
+  line-height: rem(18px);
 }
 
 @mixin Body1Semibold-Regular {
-  color: $black-h;
+  color: $black-text;
   font-size: rem(16px);
   font-weight: 400;
   line-height: rem(24px);
+}
+
+@mixin BodyLight {
+  color: $black-text;
+  font-size: rem(16px);
+  font-weight: 400;
+  line-height: rem(18px);
+  font-style: normal;
 }
 
 // colors
@@ -65,9 +73,8 @@ $gray: #666666;
 $black: #292929;
 $white: #FFFFFF;
 $red-btn: #CA1B36;
-$black-text: #000000;
 $white-background: #F5F5F5;
-$black-h: #303236;
+$black-text: #000000;
 
 //z-indexs
 

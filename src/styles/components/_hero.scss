@@ -51,9 +51,12 @@
 
   &__main-title {
     @include h1;
-    color: $black-h;
+    color: $black-text;
     margin-bottom: rem(15px);
     text-transform: uppercase;
+    width: rem(400px);
+    text-shadow:0 4px 4px rgb(41, 41, 41, 0.25);
+    
 
     @include phones {
       font-size: rem(40px);
@@ -65,6 +68,9 @@
     @include Body1Semibold-Regular;
     font-size: rem(21px);
     margin-bottom: rem(39px);
+    font-size: 21px;
+    line-height: 25px;
+    max-width: rem(382px);
 
     @include tablets {
       padding: 0 25%;
@@ -74,5 +80,32 @@
       padding: 0 14%;
       font-size: rem(18px);
     }
+  }
+
+  &__img {
+    width: 53%;
+    border-radius: 50%;
+    position: absolute;
+    top: 20%;
+    right: 0%;
+    overflow: hidden;
+    background: #fff;
+
+    @include tablets {
+      width: 35rem;
+      top: 55%;
+      left: 50%;
+      transform: translate(-50%, -93%);
+    }
+
+    @include phones {
+      width: 62%;
+      top: 50%;
+    }
+  }
+
+  &__pic {
+    height: 100%;
+    width: 100%;
   }
 }

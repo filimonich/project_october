@@ -1,13 +1,16 @@
 .contacts {
+
+
   &__tel {
-    @include Body2Bold;
-    font-size: rem(22px);
-    line-height: rem(30px);
-    color: $white;
     text-decoration: none;
     display: flex;
     align-items: center;
     white-space: nowrap;
+    transition: fill 0.5s;
+
+    &:hover {
+      fill: $red;
+    }
   }
 
   &__icon {
@@ -19,20 +22,25 @@
     width: rem(14px);
     height: rem(14px);
     margin-right: rem(8px);
+    margin-top: rem(8px);
   }
 
   &__icon-elem--color--white {
     fill: $white;
   }
-  
+
   &__text {
     @include Body1Semibold-Regular;
-    font-family: "Play";
     font-style: normal;
+    transition: color 0.5s;
+
+    &:hover {
+      color: $red;
+    }
+
   }
 
   &__text--color--black {
     color: $black;
   }
-
 }

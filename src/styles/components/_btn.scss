@@ -1,0 +1,30 @@
+.btn {
+  font-size: rem(16px);
+  font-weight: bold;
+  padding: rem(21px) rem(41px);
+  text-transform: uppercase;
+  border-radius: rem(100px);
+  line-height: 1;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  color: $white;
+
+  &--theme--red {
+    background: $red;
+
+    &:hover {
+      background: $red-btn;
+    }
+  }
+
+  &--theme--transparent {
+    @include Body2Regular;
+    text-transform: none;
+    color: $red;
+
+    &:hover {
+      color: $red-btn;
+    }
+  }
+}

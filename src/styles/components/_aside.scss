@@ -1,0 +1,17 @@
+.aside {
+  display: flex;
+  @include BodyLight;
+
+  &__icon {
+    width: rem(41px);
+    height: rem(41px); 
+    margin-right: rem(7px);
+    fill: $black;
+  }
+
+  &__text {
+    color: $black;
+    font-size: rem(16px);
+    max-width: rem(114px);
+  }
+}
