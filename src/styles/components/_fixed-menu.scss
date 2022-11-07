@@ -1,0 +1,57 @@
+.fixed-menu {
+  position: fixed;
+  top: 40%;
+  right: 3%;
+  z-index: $z-fixed-menu;
+
+  @include tablets {
+    display: none;
+  }
+
+  @include phones {
+    display: none;
+  }
+
+  &__item {
+    margin-bottom: rem(8px);
+  }
+
+  &__item--active {
+    .fixed-menu__link {
+      border-color: $black;
+    }
+  }
+
+  &__link {
+    width: rem(16px);
+    height: rem(16px);
+    border-radius: 50%;
+    border: rem(1px) solid transparent;
+    display: block;
+    position: relative;
+
+    &::before {
+      content: "";
+      display: block;
+      width: rem(6px);
+      height: rem(6px);
+      border-radius: 50%;
+      background: $black;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+}
+
+.fixed-menu__item--shadowed {
+  .fixed-menu__item--active {
+    .fixed-menu__link {
+      border-color: $red;
+    }
+  }
+  .fixed-menu__link::before {
+    background: $red;
+  } 
+}

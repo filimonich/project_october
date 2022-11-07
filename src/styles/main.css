@@ -20,7 +20,7 @@ body {
 
 body {
   margin: 0;
-  background-color: #F5F5F5;
+  background-color: #FFFFFF;
   font-family: "Play", Helvetica, sans-serif;
   font-size: 18px;
   line-height: 1.42;
@@ -37,7 +37,6 @@ body {
   position: relative;
   width: 100%;
   height: 100%;
-  overflow: hidden;
 }
 
 .wrapper__main {
@@ -97,6 +96,17 @@ btn {
   height: 100%;
   min-height: 36.2222222222rem;
 }
+.hero::after {
+  content: "";
+  display: block;
+  position: absolute;
+  background: #999999;
+  height: 0.5555555556rem;
+  width: 2.5555555556rem;
+  right: 23%;
+  top: 99.5%;
+  transform: rotate(-45deg);
+}
 @media screen and (max-width: 768px) {
   .hero {
     position: relative;
@@ -118,6 +128,7 @@ btn {
   justify-content: space-between;
   height: 100%;
   padding: 1.3333333333rem 0 3.6111111111rem;
+  background: url(../../../src/image/main/BeatsSolo3.png) right center/50% auto no-repeat;
 }
 .hero__title-section {
   width: 45%;
@@ -176,29 +187,6 @@ btn {
   .hero__title-text {
     padding: 0 14%;
     font-size: 1rem;
-  }
-}
-.hero__img {
-  width: 53%;
-  border-radius: 50%;
-  position: absolute;
-  top: 20%;
-  right: 0%;
-  overflow: hidden;
-  background: #fff;
-}
-@media screen and (max-width: 768px) {
-  .hero__img {
-    width: 35rem;
-    top: 55%;
-    left: 50%;
-    transform: translate(-50%, -93%);
-  }
-}
-@media screen and (max-width: 480px) {
-  .hero__img {
-    width: 62%;
-    top: 50%;
   }
 }
 .hero__pic {
@@ -447,4 +435,197 @@ btn {
     font-size: 2.2222222222rem;
     line-height: 2rem;
   }
+}
+
+.headline {
+  text-align: center;
+  background-color: #FFFFFF;
+}
+.headline__title {
+  margin-bottom: 1rem;
+}
+@media screen and (max-width: 480px) {
+  .headline__title {
+    font-size: 2.2222222222rem;
+    line-height: 2rem;
+    margin-bottom: 0.4444444444rem;
+  }
+}
+.headline__subtitle {
+  color: #000000;
+  font-size: 0.8888888889rem;
+  font-weight: 400;
+  line-height: 1rem;
+  color: #666666;
+  padding: 0 30%;
+  margin-bottom: 2.7777777778rem;
+}
+@media screen and (max-width: 480px) {
+  .headline__subtitle {
+    font-size: 1rem;
+    line-height: 1.2222222222rem;
+    padding: 0 5%;
+    margin-bottom: 3rem;
+  }
+}
+.headline::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 4%;
+  top: 148%;
+  transform: rotate(-14deg);
+  width: 0;
+  height: 0;
+  border-left: 22px solid transparent;
+  border-right: 22px solid transparent;
+  border-bottom: 38px solid #E01F3D;
+}
+
+.benefit {
+  text-align: center;
+}
+@media screen and (max-width: 480px) {
+  .benefit {
+    display: flex;
+    text-align: left;
+  }
+}
+.benefit__image-wrapper {
+  display: inline-block;
+  width: 7.1111111111rem;
+  height: 7.1111111111rem;
+  position: relative;
+  background: #F2F5F4;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.benefit__icon {
+  width: 3.7777777778rem;
+  height: 3.7777777778rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.benefit__image {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5555555556rem;
+}
+@media screen and (max-width: 480px) {
+  .benefit__image {
+    margin-bottom: 0;
+    margin-right: 0.6666666667rem;
+  }
+}
+.benefit__title {
+  color: #000000;
+  font-size: 1.3333333333rem;
+  font-weight: 700;
+  line-height: 1.5555555556rem;
+}
+@media screen and (max-width: 480px) {
+  .benefit__title {
+    margin-bottom: 0.5555555556rem;
+  }
+}
+.benefit__desc {
+  color: #666666;
+}
+
+.benefits {
+  display: flex;
+}
+@media screen and (max-width: 480px) {
+  .benefits {
+    flex-direction: column;
+  }
+}
+.benefits__item {
+  flex: 1;
+  padding: 0 3%;
+  position: relative;
+}
+@media screen and (max-width: 480px) {
+  .benefits__item {
+    padding: 0;
+    margin-bottom: 1rem;
+  }
+}
+.benefits__item:before {
+  content: url("./../../src/image/section/combined-shape.png");
+  position: absolute;
+  top: 1.6666666667rem;
+  right: 0;
+  transform: translate(50%);
+}
+@media screen and (max-width: 768px) {
+  .benefits__item:before {
+    display: none;
+  }
+}
+@media screen and (max-width: 480px) {
+  .benefits__item:before {
+    display: none;
+  }
+}
+.benefits__item:first-child {
+  padding-left: 0;
+}
+.benefits__item:last-child {
+  padding-right: 0;
+}
+.benefits__item:last-child:before {
+  display: none;
+}
+
+.fixed-menu {
+  position: fixed;
+  top: 40%;
+  right: 3%;
+  z-index: 100;
+}
+@media screen and (max-width: 768px) {
+  .fixed-menu {
+    display: none;
+  }
+}
+@media screen and (max-width: 480px) {
+  .fixed-menu {
+    display: none;
+  }
+}
+.fixed-menu__item {
+  margin-bottom: 0.4444444444rem;
+}
+.fixed-menu__item--active .fixed-menu__link {
+  border-color: #292929;
+}
+.fixed-menu__link {
+  width: 0.8888888889rem;
+  height: 0.8888888889rem;
+  border-radius: 50%;
+  border: 0.0555555556rem solid transparent;
+  display: block;
+  position: relative;
+}
+.fixed-menu__link::before {
+  content: "";
+  display: block;
+  width: 0.3333333333rem;
+  height: 0.3333333333rem;
+  border-radius: 50%;
+  background: #292929;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.fixed-menu__item--shadowed .fixed-menu__item--active .fixed-menu__link {
+  border-color: #E01F3D;
+}
+.fixed-menu__item--shadowed .fixed-menu__link::before {
+  background: #E01F3D;
 }/*# sourceMappingURL=main.css.map */

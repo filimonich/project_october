@@ -1,0 +1,43 @@
+.headline {
+  text-align: center;
+  background-color: $white;
+
+  &__title {
+    margin-bottom: rem(18px);
+
+    @include phones {
+      font-size: rem(40px);
+      line-height: rem(36px);
+      margin-bottom: rem(8px);
+    }
+
+  }
+
+  &__subtitle {
+    @include Body2Regular;
+    color: $gray;
+    padding: 0 30%;
+    margin-bottom: rem(50px);
+
+    @include phones {
+      font-size: rem(18px);
+      line-height: rem(22px);
+      padding: 0 5%;
+      margin-bottom: rem(54px);
+    }
+  }
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 4%;
+    top: 148%;
+    transform: rotate(-14deg);
+    width: 0;
+    height: 0;
+    border-left: 22px solid transparent;
+    border-right: 22px solid transparent;
+    border-bottom: 38px solid $red;
+  
+  }
+}
