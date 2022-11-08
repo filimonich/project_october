@@ -1,0 +1,97 @@
+.form {
+  display: flex;
+  @include Body1Semibold-Regular;
+  color: $white;
+
+  @include tablets {
+    padding: 0 18%;
+    flex-direction: column;
+  }
+
+  @include phones {
+    padding: 0;
+  }
+
+  &__col {
+    flex: 1;
+    margin-right: rem(26px);
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    @include tablets {
+      margin-right: 0;
+    }
+  }
+
+  &__row {
+    display: flex;
+    margin-bottom: rem(14px);
+  }
+
+  &__block {
+    flex: 1;
+    margin-right: rem(16px);
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  
+  &__input {
+    width: 100%;
+    border: none;
+    padding: rem(18px) rem(12px) rem(20px);
+    border: solid rem(3px) transparent;
+    border-radius: rem(4px);
+    
+
+    &--textarea {
+      height: rem(168px);
+      resize: none;
+      margin-bottom: rem(6px);
+    }
+
+    &:focus {
+      border-color: $red;
+      outline: none;
+    }
+    
+    @include tablets {
+      padding: rem(8px) rem(10px) rem(8px);
+      
+      &--textarea {
+        height: rem(82px);
+      }
+    }
+    
+    @include phones {
+      height: rem(36px);
+      
+      &--textarea {
+        height: rem(82px);
+      }
+    }
+  }
+  
+ .input-error {
+    border: solid rem(3px) red;
+  }
+  
+  &__controls {
+    display: flex;
+    flex-wrap: wrap;
+
+    @include phones {
+      justify-content: center;
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    justify-content: center;
+  }
+
+}

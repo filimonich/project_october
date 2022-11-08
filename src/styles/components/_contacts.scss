@@ -1,21 +1,23 @@
 .contacts {
-
-
+  @include Body1Semibold-Regular;
+  text-decoration: none;
+  
   &__tel {
+    color: $black-text;
     text-decoration: none;
     display: flex;
     align-items: center;
     white-space: nowrap;
-    transition: fill 0.5s;
-
+    transition: color 0.5s, fill 0.5s;
+    
     &:hover {
+      color: $red;
       fill: $red;
     }
   }
 
   &__icon {
     flex-shrink: 0;
-
   }
 
   &__icon-elem {
@@ -25,19 +27,8 @@
     margin-top: rem(8px);
   }
 
-  &__icon-elem--color--white {
-    fill: $white;
-  }
-
   &__text {
-    @include Body1Semibold-Regular;
     font-style: normal;
-    transition: color 0.5s;
-
-    &:hover {
-      color: $red;
-    }
-
   }
 
   &__text--color--black {

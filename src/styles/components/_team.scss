@@ -1,0 +1,127 @@
+.team {
+  display: flex;
+  justify-content: space-between;
+
+  @include tablets {
+    padding: 0 10%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__content--active {
+    height: 50px;
+
+    @include tablets {
+      height: 340px;
+      margin-bottom: rem(30px);
+    }
+
+    @include phones {
+      margin-bottom: rem(30px);
+    }
+  }
+
+  &__item {
+    text-align: center;
+    align-items: center;
+    margin-right: rem(20px);
+    max-width: rem(454px);
+
+    @include tablets {
+      flex: initial;
+      margin-right: 0;
+      height: auto;
+    }
+
+    @include phones {
+      height: auto;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__member {
+    margin-bottom: rem(22px);
+  }
+
+  &__title {
+    color: $black;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: rem(8px);
+
+    @include tablets {
+      margin-bottom: 0;
+    }
+
+    @include phones {
+      margin-bottom: 0;
+    }
+  }
+
+  &__name {
+    @include Body1Semibold-Regular;
+    font-size: rem(20px);
+    cursor: pointer;
+
+    &::after {
+      content: "";
+      display: inline-block;
+      vertical-align: middle;
+      margin-left: rem(3px);
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: rem(7px) rem(4.5px) 0px rem(4.5px);
+      border-color: #e01f3c transparent transparent transparent;
+    }
+
+  }
+
+  &__content {
+    max-width: rem(200px);
+    overflow: hidden;
+    transition: height .3s;
+    height: 0;
+    position: absolute;
+
+    @include tablets {
+      height: 0;
+      position: relative;
+    }
+  }
+
+  &__profession {
+    @include Body1Semibold-Regular;
+    margin-bottom: rem(4px);
+  }
+
+  &__description {
+    @include BodyLight;
+  }
+}
+
+.team--version--desktop {
+  @include tablets {
+    display: none;
+  }
+}
+
+.team--version--desktop .team__content {
+  top: 100%;
+}
+
+.team--version--mobile {
+  display: none;
+
+  @include tablets {
+    display: flex;
+  }
+}
+
+.team--version--mobile .team__item {
+  margin-bottom: rem(16px);
+}

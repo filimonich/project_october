@@ -1,0 +1,36 @@
+.footer {
+  padding: rem(44px) 0;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  @include phones {
+    flex-direction: column;
+  }
+
+  &__text {
+    @include Body1Semibold-Regular;
+    color: $black;
+
+    @include phones {
+      margin-bottom: rem(12px);
+    }
+  }
+
+  &__phone-number {
+    @include Body1Semibold-Regular;
+    color: $black;
+
+    @include phones {
+      justify-content: center;
+      margin-bottom: rem(20px);
+    }
+  }
+
+  &__col {
+    display: flex;
+    align-items: center;
+  }
+
+}
