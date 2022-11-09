@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans&display=swap");
 html {
   font-size: 18px;
 }
@@ -21,13 +22,17 @@ body {
 body {
   margin: 0;
   background-color: #FFFFFF;
-  font-family: "Play", Helvetica, sans-serif;
+  font-family: "Play", "Alegreya Sans", Helvetica, sans-serif;
   font-size: 18px;
   color: #000000;
   line-height: 1.42;
   position: relative;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  -moz-osx-font-smoothing: greyscale;
+}
+
+section {
+  height: 100%;
 }
 
 .body--active-menu {
@@ -89,6 +94,7 @@ img {
 btn {
   background: transparent;
   border: none;
+  transition: 0.3s;
 }
 
 .hero {
@@ -201,6 +207,17 @@ btn {
 .header__col {
   padding-top: 0.2777777778rem;
 }
+.header__phone-number {
+  font-size: 0.8888888889rem;
+  font-weight: 400;
+  line-height: 1.3333333333rem;
+  color: #000000;
+  transition: 0.5s;
+}
+.header__phone-number:hover {
+  fill: #E01F3D;
+  color: #E01F3D;
+}
 
 @media screen and (max-width: 768px) {
   .contacts__tel.header__phone-number {
@@ -255,6 +272,7 @@ btn {
 .menu__item {
   margin-right: 1.2222222222rem;
   margin-bottom: 0.5555555556rem;
+  font-family: "Alegreya Sans";
 }
 .menu__item:last-child {
   margin-right: 0;
@@ -298,23 +316,11 @@ btn {
   line-height: 4rem;
 }
 
-.contacts {
-  font-size: 0.8888888889rem;
-  font-weight: 400;
-  line-height: 1.3333333333rem;
-  text-decoration: none;
-}
 .contacts__tel {
-  color: #000000;
   text-decoration: none;
   display: flex;
   align-items: center;
   white-space: nowrap;
-  transition: color 0.5s, fill 0.5s;
-}
-.contacts__tel:hover {
-  color: #E01F3D;
-  fill: #E01F3D;
 }
 .contacts__icon {
   flex-shrink: 0;
@@ -327,9 +333,7 @@ btn {
 }
 .contacts__text {
   font-style: normal;
-}
-.contacts__text--color--black {
-  color: #292929;
+  font-size: 1rem;
 }
 
 .logo {
@@ -350,6 +354,17 @@ btn {
 .header__col {
   padding-top: 0.2777777778rem;
 }
+.header__phone-number {
+  font-size: 0.8888888889rem;
+  font-weight: 400;
+  line-height: 1.3333333333rem;
+  color: #000000;
+  transition: 0.5s;
+}
+.header__phone-number:hover {
+  fill: #E01F3D;
+  color: #E01F3D;
+}
 
 @media screen and (max-width: 768px) {
   .contacts__tel.header__phone-number {
@@ -358,10 +373,11 @@ btn {
 }
 
 .container {
-  width: 95%;
   max-width: 915px;
   margin: 0 auto;
-  position: relative;
+  width: 95%;
+  max-width: 94rem;
+  height: 100%;
 }
 
 .btn {
@@ -393,13 +409,6 @@ btn {
   color: #CA1B36;
 }
 
-.section {
-  height: 100%;
-  min-height: 36.1111111111rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
 .section__title {
   font-size: 1.3333333333rem;
   font-weight: 700;
@@ -945,11 +954,11 @@ btn {
 }
 
 .footer {
-  padding: 2.4444444444rem 0;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #F5F5F5;
 }
 @media screen and (max-width: 480px) {
   .footer {
@@ -957,10 +966,10 @@ btn {
   }
 }
 .footer__text {
-  font-size: 0.8888888889rem;
+  font-size: 18px;
   font-weight: 400;
   line-height: 1.3333333333rem;
-  color: #292929;
+  color: #000000;
 }
 @media screen and (max-width: 480px) {
   .footer__text {
@@ -971,7 +980,7 @@ btn {
   font-size: 0.8888888889rem;
   font-weight: 400;
   line-height: 1.3333333333rem;
-  color: #292929;
+  color: #000000;
 }
 @media screen and (max-width: 480px) {
   .footer__phone-number {
@@ -982,6 +991,31 @@ btn {
 .footer__col {
   display: flex;
   align-items: center;
+}
+.footer__contacts {
+  padding: 1.1111111111rem 0rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.16667rem;
+  font-style: normal;
+}
+
+.socials {
+  cursor: pointer;
+}
+.socials__item {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+.socials__link {
+  width: 1.1111111111rem;
+  height: 1.1111111111rem;
+  fill: #666666;
+}
+.socials__link:hover {
+  fill: #292929;
 }
 
 .team {
@@ -1115,4 +1149,33 @@ btn {
 
 .team--version--mobile .team__item {
   margin-bottom: 0.8888888889rem;
+}
+
+.section-map {
+  position: relative;
+}
+
+.container-map {
+  overflow: hidden;
+  height: 100%;
+}
+
+.map__icon {
+  width: 1487px;
+  height: 878px;
+  display: block;
+}
+
+.footer-inner {
+  width: 95%;
+  max-width: 940px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.container-headline {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
 }/*# sourceMappingURL=main.css.map */

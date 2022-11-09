@@ -1,0 +1,20 @@
+.socials {
+  cursor: pointer;
+
+
+  &__item {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+  }
+
+  &__link {
+    width: rem(20px);
+    height: rem(20px);
+    fill: $grey;
+
+    &:hover {
+      fill: $black;
+    }
+  }
+}

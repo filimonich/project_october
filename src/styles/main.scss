@@ -61,13 +61,13 @@ $phones: 480px;
 // colors
 
 $red: #E01F3D;
-$gray: #666666;
+$grey: #666666;
 $black: #292929;
 $white: #FFFFFF;
 $red-btn: #CA1B36;
 $white-background: #F5F5F5;
 $black-text: #000000;
-$gray-a: #C4C4C4;
+$grey-a: #C4C4C4;
 $white-r: #F8FAF9;
 
 
@@ -83,6 +83,7 @@ $z-fixed-menu: 100;
 //setup
 
 @import url("https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans&display=swap');
 @import "./layout/_layout.scss";
 
 // components
@@ -118,3 +119,6 @@ $z-fixed-menu: 100;
 @import "./components/_modal.scss";
 @import "./components/_products-menu-section.scss";
 @import "./components/_products-menu.scss";
+@import "./components/_section-map.scss";
+@import "./components/_footer-inner.scss";
+@import "./components/_container-headline.scss";

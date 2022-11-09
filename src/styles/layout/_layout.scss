@@ -18,13 +18,17 @@ body {
 body {
   margin: 0;
   background-color: $white;
-  font-family: "Play", Helvetica, sans-serif;
+  font-family: "Play",'Alegreya Sans', Helvetica, sans-serif;
   font-size: $baseFontSize;
   color: $black-text;
   line-height: 1.42;
   position: relative;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  -moz-osx-font-smoothing: greyscale;
+}
+
+section {
+  height: 100%;
 }
 
 .body--active-menu {
@@ -89,4 +93,5 @@ img {
 btn {
   background: transparent;
   border: none;
+  transition: 0.3s;
 }

@@ -7,8 +7,17 @@
     padding-top: rem(5px);
   }
 
-}
+  &__phone-number {
+    @include Body1Semibold-Regular;
+    color: $black-text;
+    transition: 0.5s;
 
+    &:hover {
+      fill: $red;
+      color: $red;
+    }
+  }
+}
 
 .contacts__tel.header__phone-number {
   @include tablets {

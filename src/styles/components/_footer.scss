@@ -1,17 +1,17 @@
 .footer {
-  padding: rem(44px) 0;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: $white-background;
 
   @include phones {
     flex-direction: column;
   }
 
   &__text {
-    @include Body1Semibold-Regular;
-    color: $black;
+    @include Body2Semibold;
+    color: $black-text;
 
     @include phones {
       margin-bottom: rem(12px);
@@ -20,7 +20,8 @@
 
   &__phone-number {
     @include Body1Semibold-Regular;
-    color: $black;
+    color: $black-text;
+
 
     @include phones {
       justify-content: center;
@@ -33,4 +34,12 @@
     align-items: center;
   }
 
+  &__contacts {
+    padding: rem(20px) 0rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.16667rem;
+    font-style: normal;
+  }
 }
