@@ -45,5 +45,6 @@
 
   &__desc {
     color: $grey;
+    @include  BodyLight;
   }
 }

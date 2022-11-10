@@ -1,0 +1,19 @@
+.container-reviews {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    background: #999999;
+    width: rem(35px);
+    height: rem(35px);
+    border-radius: 50%;
+    left: 4%;
+    top: 98%;
+  }
+}

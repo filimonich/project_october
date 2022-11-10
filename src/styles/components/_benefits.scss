@@ -19,8 +19,8 @@
     &:before {
       content: url("./../../src/image/section/combined-shape.png");
       position: absolute;
-      top: rem(30px);
-      right: 0;
+      top: 16%;
+      right: rem(5px);
       transform: translate(50%);
 
       @include tablets {

@@ -116,39 +116,27 @@
     align-items: center;
     justify-content: center;
 
-    &::after {
-
-      content: "";
-      display: block;
-      position: absolute;
-      background: #999999;
-      width: 3.4rem;
-      height: 3.4rem;
-      border-radius: 50%;
-      left: 4%;
-      top: 128%;
-
       @include tablets {
         top: 98.6%;
       }
     }
 
-  }
 
   &__switcher-item {
     box-sizing: border-box;
     width: rem(74px);
     height: rem(74px);
-    border: rem(6px) solid transparent;
+    border: rem(4px) solid transparent;
     border-radius: 50%;
     overflow: hidden;
     position: relative;
     cursor: pointer;
+    margin-right: rem(2px);
 
-  }
-
-  &__switcher-item.reviews__item--active {
-    border-color: $red;
+    &--active,
+    &:hover {
+      border-color: $red;
+    }
   }
 
   &__switcher-link {

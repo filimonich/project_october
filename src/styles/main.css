@@ -41,8 +41,10 @@ section {
 
 .wrapper {
   position: relative;
+  display: flex;
   width: 100%;
   height: 100%;
+  flex-direction: column;
 }
 
 .wrapper__main {
@@ -97,9 +99,15 @@ btn {
   transition: 0.3s;
 }
 
+.container {
+  margin: 0 auto;
+  max-width: 915px;
+  width: 95%;
+  height: 100%;
+}
+
 .hero {
   background: #F5F5F5;
-  background-size: cover;
   height: 100%;
   min-height: 36.2222222222rem;
 }
@@ -130,10 +138,10 @@ btn {
   }
 }
 .hero__container {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 100%;
   padding: 1.3333333333rem 0 3.6111111111rem;
   background: url(../../../src/image/main/BeatsSolo3.png) right center/50% auto no-repeat;
 }
@@ -158,8 +166,8 @@ btn {
 }
 .hero__main-title {
   font-size: 2.6666666667rem;
-  font-weight: 700;
-  line-height: 2.8888888889rem;
+  font-weight: bold;
+  line-height: 1.2;
   text-transform: uppercase;
   color: #000000;
   margin-bottom: 0.8333333333rem;
@@ -255,7 +263,6 @@ btn {
 }
 
 .menu {
-  margin: 0 1.6666666667rem;
   padding-top: 0.2222222222rem;
 }
 @media screen and (max-width: 768px) {
@@ -270,9 +277,10 @@ btn {
   justify-content: center;
 }
 .menu__item {
-  margin-right: 1.2222222222rem;
+  margin-right: 1.5rem;
   margin-bottom: 0.5555555556rem;
   font-family: "Alegreya Sans";
+  letter-spacing: 0px;
 }
 .menu__item:last-child {
   margin-right: 0;
@@ -337,13 +345,14 @@ btn {
 }
 
 .logo {
+  margin-right: -20px;
   vertical-align: middle;
 }
 .logo__img {
-  margin-right: 0;
   width: 2.2222222222rem;
   height: 2.2222222222rem;
   fill: #E01F3D;
+  flex-shrink: 0;
 }
 
 .header {
@@ -370,14 +379,6 @@ btn {
   .contacts__tel.header__phone-number {
     display: none;
   }
-}
-
-.container {
-  max-width: 915px;
-  margin: 0 auto;
-  width: 95%;
-  max-width: 94rem;
-  height: 100%;
 }
 
 .btn {
@@ -410,9 +411,9 @@ btn {
 }
 
 .section__title {
-  font-size: 1.3333333333rem;
-  font-weight: 700;
-  line-height: 1.5555555556rem;
+  font-size: 2.6666666667rem;
+  font-weight: bold;
+  line-height: 2.8888888889rem;
   font-size: 2.6666666667rem;
   margin-bottom: 3.3333333333rem;
   text-align: center;
@@ -458,7 +459,7 @@ btn {
   font-weight: 400;
   line-height: 1rem;
   color: #666666;
-  padding: 0 30%;
+  padding: 0 20%;
   margin-bottom: 2.7777777778rem;
 }
 @media screen and (max-width: 480px) {
@@ -474,7 +475,7 @@ btn {
   display: block;
   position: absolute;
   left: 4%;
-  top: 128%;
+  top: 98%;
   transform: rotate(-14deg);
   width: 0;
   height: 0;
@@ -528,7 +529,7 @@ btn {
 }
 .benefit__title {
   font-size: 1.3333333333rem;
-  font-weight: 700;
+  font-weight: bold;
   line-height: 1.5555555556rem;
 }
 @media screen and (max-width: 480px) {
@@ -538,6 +539,10 @@ btn {
 }
 .benefit__desc {
   color: #666666;
+  font-size: 0.8888888889rem;
+  font-weight: 400;
+  line-height: 1rem;
+  font-style: normal;
 }
 
 .benefits {
@@ -562,8 +567,8 @@ btn {
 .benefits__item:before {
   content: url("./../../src/image/section/combined-shape.png");
   position: absolute;
-  top: 1.6666666667rem;
-  right: 0;
+  top: 16%;
+  right: 0.2777777778rem;
   transform: translate(50%);
 }
 @media screen and (max-width: 768px) {
@@ -673,7 +678,7 @@ btn {
 }
 .reviews__title {
   font-size: 1.3333333333rem;
-  font-weight: 700;
+  font-weight: bold;
   line-height: 1.5555555556rem;
   margin-bottom: 0.7777777778rem;
 }
@@ -701,19 +706,8 @@ btn {
   align-items: center;
   justify-content: center;
 }
-.reviews__switcher::after {
-  content: "";
-  display: block;
-  position: absolute;
-  background: #999999;
-  width: 3.4rem;
-  height: 3.4rem;
-  border-radius: 50%;
-  left: 4%;
-  top: 128%;
-}
 @media screen and (max-width: 768px) {
-  .reviews__switcher::after {
+  .reviews__switcher {
     top: 98.6%;
   }
 }
@@ -721,13 +715,14 @@ btn {
   box-sizing: border-box;
   width: 4.1111111111rem;
   height: 4.1111111111rem;
-  border: 0.3333333333rem solid transparent;
+  border: 0.2222222222rem solid transparent;
   border-radius: 50%;
   overflow: hidden;
   position: relative;
   cursor: pointer;
+  margin-right: 0.1111111111rem;
 }
-.reviews__switcher-item.reviews__item--active {
+.reviews__switcher-item--active, .reviews__switcher-item:hover {
   border-color: #E01F3D;
 }
 .reviews__switcher-link {
@@ -894,13 +889,20 @@ btn {
   }
 }
 
-.reviews-section {
+.section-form {
   position: relative;
   background: url("./../../../src/image/form/formbg.png") center top no-repeat;
   background-size: cover;
   height: 100%;
   min-height: 36.2222222222rem;
   z-index: 3;
+}
+
+.container-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .fixed-menu {
@@ -1064,6 +1066,9 @@ btn {
 .team__item:last-child {
   margin-right: 0;
 }
+.team__item.team__content--active .team__img::after {
+  transform: rotate(180deg);
+}
 .team__member {
   margin-bottom: 1.2222222222rem;
 }
@@ -1164,6 +1169,7 @@ btn {
   width: 1487px;
   height: 878px;
   display: block;
+  margin: 0 auto;
 }
 
 .footer-inner {
@@ -1178,4 +1184,39 @@ btn {
   flex-direction: column;
   justify-content: center;
   position: relative;
+}
+
+.container-team {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-reviews {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.container-reviews::after {
+  content: "";
+  display: block;
+  position: absolute;
+  background: #999999;
+  width: 1.9444444444rem;
+  height: 1.9444444444rem;
+  border-radius: 50%;
+  left: 4%;
+  top: 98%;
+}
+
+.container-player {
+  padding: 6.8rem 0px 9.4rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }/*# sourceMappingURL=main.css.map */

@@ -1,5 +1,4 @@
 .menu {
-  margin: 0 rem(30px);
   padding-top: rem(4px);
 
   @include tablets {
@@ -14,10 +13,10 @@
   }
 
   &__item {
-    margin-right: rem(22px);
+    margin-right: rem(27px);
     margin-bottom: rem(10px);
     font-family: 'Alegreya Sans';
-    // letter-spacing: -1px;
+    letter-spacing: 0px;
 
     &:last-child {
       margin-right: 0;

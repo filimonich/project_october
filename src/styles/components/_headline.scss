@@ -16,7 +16,7 @@
   &__subtitle {
     @include Body2Regular;
     color: $grey;
-    padding: 0 30%;
+    padding: 0 20%;
     margin-bottom: rem(50px);
 
     @include phones {
@@ -31,7 +31,7 @@
     display: block;
     position: absolute;
     left: 4%;
-    top: 128%;
+    top: 98%;
     transform: rotate(-14deg);
     width: 0;
     height: 0;
