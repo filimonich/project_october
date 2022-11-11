@@ -21,7 +21,7 @@
   &--theme--transparent {
     @include Body2Regular;
     text-transform: none;
-    color: $red;
+    color: $white;
 
     &:hover {
       color: $red-btn;

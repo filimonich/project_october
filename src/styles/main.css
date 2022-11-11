@@ -404,7 +404,7 @@ btn {
   font-weight: 400;
   line-height: 1rem;
   text-transform: none;
-  color: #E01F3D;
+  color: #FFFFFF;
 }
 .btn--theme--transparent:hover {
   color: #CA1B36;
@@ -890,12 +890,9 @@ btn {
 }
 
 .section-form {
-  position: relative;
-  background: url("./../../../src/image/form/formbg.png") center top no-repeat;
+  background: url("./../../../src/image/form/formbg.png") center bottom no-repeat;
   background-size: cover;
-  height: 100%;
-  min-height: 36.2222222222rem;
-  z-index: 3;
+  background-color: #181818;
 }
 
 .container-form {
@@ -1162,14 +1159,9 @@ btn {
 
 .container-map {
   overflow: hidden;
-  height: 100%;
-}
-
-.map__icon {
-  width: 1487px;
-  height: 878px;
-  display: block;
   margin: 0 auto;
+  height: 100%;
+  width: 50%;
 }
 
 .footer-inner {
@@ -1219,4 +1211,29 @@ btn {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.player-decor {
+  position: absolute;
+  bottom: -2%;
+  right: 4%;
+  transform: rotate(-20deg);
+}
+.player-decor__pentagon {
+  position: relative;
+  width: 56px;
+  border-width: 29px 15px 0;
+  border-style: solid;
+  border-color: #E01F3D transparent;
+}
+.player-decor__pentagon:before {
+  content: "";
+  position: absolute;
+  height: 0;
+  width: 0;
+  top: -49px;
+  left: -15px;
+  border-width: 0 28px 21px;
+  border-style: solid;
+  border-color: transparent transparent #E01F3D;
 }/*# sourceMappingURL=main.css.map */

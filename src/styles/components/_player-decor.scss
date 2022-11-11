@@ -1,0 +1,27 @@
+.player-decor {
+  position: absolute;
+  bottom: -2%;
+  right: 4%;
+  transform: rotate(-20deg);
+
+  &__pentagon {
+    position: relative;
+    width: 56px;
+    border-width: 29px 15px 0;
+    border-style: solid;
+    border-color: $red transparent;
+
+    &:before {
+
+      content: "";
+      position: absolute;
+      height: 0;
+      width: 0;
+      top: -49px;
+      left: -15px;
+      border-width: 0 28px 21px;
+      border-style: solid;
+      border-color: transparent transparent $red;
+    }
+  }
+}

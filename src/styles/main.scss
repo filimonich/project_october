@@ -70,6 +70,7 @@ $white-background: #F5F5F5;
 $black-text: #000000;
 $grey-a: #C4C4C4;
 $white-r: #F8FAF9;
+$black-background: #181818;
 
 
 
@@ -127,3 +128,4 @@ $z-fixed-menu: 100;
 @import "./components/_container-team.scss";
 @import "./components/_container-reviews.scss";
 @import "./components/_container-player.scss";
+@import "./components/_player-decor.scss";
