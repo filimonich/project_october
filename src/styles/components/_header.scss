@@ -9,7 +9,7 @@
 
   &__phone-number {
     @include Body1Semibold-Regular;
-    color: $black-text;
+    color: $black;
     transition: 0.5s;
 
     &:hover {

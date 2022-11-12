@@ -24,7 +24,7 @@ body {
   background-color: #FFFFFF;
   font-family: "Play", "Alegreya Sans", Helvetica, sans-serif;
   font-size: 18px;
-  color: #000000;
+  color: #292929;
   line-height: 1.42;
   position: relative;
   -webkit-font-smoothing: antialiased;
@@ -111,30 +111,9 @@ btn {
   height: 100%;
   min-height: 36.2222222222rem;
 }
-.hero::after {
-  content: "";
-  display: block;
-  position: absolute;
-  background: #999999;
-  height: 0.5555555556rem;
-  width: 2.5555555556rem;
-  right: 23%;
-  top: 99.5%;
-  transform: rotate(-45deg);
-}
 @media screen and (max-width: 768px) {
   .hero {
     position: relative;
-  }
-  .hero:before {
-    content: "";
-    width: 100%;
-    height: 5.1111111111rem;
-    min-width: 20rem;
-    top: 0;
-    background-color: #FFFFFF;
-    display: flex;
-    position: absolute;
   }
 }
 .hero__container {
@@ -145,18 +124,45 @@ btn {
   padding: 1.3333333333rem 0 3.6111111111rem;
   background: url(../../../src/image/main/BeatsSolo3.png) right center/50% auto no-repeat;
 }
+@media screen and (max-width: 768px) {
+  .hero__container {
+    background-size: 44% auto;
+    background-position: 50% 26%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .hero__container {
+    background-size: 70% auto;
+    background-position: 50% 26%;
+  }
+}
+.hero__container::after {
+  content: "";
+  display: block;
+  position: absolute;
+  background: #999999;
+  height: 0.5555555556rem;
+  width: 2.5555555556rem;
+  right: 0.5%;
+  top: 99.5%;
+  transform: rotate(-45deg);
+}
 .hero__title-section {
   width: 45%;
 }
 @media screen and (max-width: 768px) {
   .hero__title-section {
     width: 100%;
-    flex: 1;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     text-align: center;
+    align-items: center;
+    margin-bottom: 13%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .hero__title-section {
+    margin-bottom: 0;
   }
 }
 @media screen and (max-width: 768px) {
@@ -169,16 +175,22 @@ btn {
   font-weight: bold;
   line-height: 1.2;
   text-transform: uppercase;
-  color: #000000;
+  color: #292929;
   margin-bottom: 0.8333333333rem;
   text-transform: uppercase;
-  width: 22.2222222222rem;
+  max-width: 22.2222222222rem;
   text-shadow: 0 4px 4px rgba(41, 41, 41, 0.25);
+}
+@media screen and (max-width: 768px) {
+  .hero__main-title {
+    max-width: 36.9444444444rem;
+  }
 }
 @media screen and (max-width: 480px) {
   .hero__main-title {
-    font-size: 2.2222222222rem;
+    font-size: 1.7777777778rem;
     line-height: 2rem;
+    padding: 0% 15%;
   }
 }
 .hero__title-text {
@@ -193,7 +205,8 @@ btn {
 }
 @media screen and (max-width: 768px) {
   .hero__title-text {
-    padding: 0 25%;
+    max-width: 25.0555555556rem;
+    padding: 0;
   }
 }
 @media screen and (max-width: 480px) {
@@ -219,7 +232,7 @@ btn {
   font-size: 0.8888888889rem;
   font-weight: 400;
   line-height: 1.3333333333rem;
-  color: #000000;
+  color: #292929;
   transition: 0.5s;
 }
 .header__phone-number:hover {
@@ -367,7 +380,7 @@ btn {
   font-size: 0.8888888889rem;
   font-weight: 400;
   line-height: 1.3333333333rem;
-  color: #000000;
+  color: #292929;
   transition: 0.5s;
 }
 .header__phone-number:hover {
@@ -968,7 +981,7 @@ btn {
   font-size: 18px;
   font-weight: 400;
   line-height: 1.3333333333rem;
-  color: #000000;
+  color: #292929;
 }
 @media screen and (max-width: 480px) {
   .footer__text {
@@ -979,7 +992,7 @@ btn {
   font-size: 0.8888888889rem;
   font-weight: 400;
   line-height: 1.3333333333rem;
-  color: #000000;
+  color: #292929;
 }
 @media screen and (max-width: 480px) {
   .footer__phone-number {

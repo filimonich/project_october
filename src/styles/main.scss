@@ -30,7 +30,7 @@ $phones: 480px;
 
 @mixin Body2Bold {
   font-size: $baseFontSize;
-  font-weight: 700;
+  font-weight: bold;
   line-height: rem(22px);
 }
 
@@ -67,7 +67,6 @@ $black: #292929;
 $white: #FFFFFF;
 $red-btn: #CA1B36;
 $white-background: #F5F5F5;
-$black-text: #000000;
 $grey-a: #C4C4C4;
 $white-r: #F8FAF9;
 $black-background: #181818;
