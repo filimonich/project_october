@@ -2,11 +2,11 @@ html {
   font-size: $baseFontSize;
 
   @include tablets {
-    font-size: $baseFontSize -  1px;
+    font-size: $baseFontSize - 1px;
   }
 
   @include phones {
-    font-size: $baseFontSize -  2px;
+    font-size: $baseFontSize - 2px;
   }
 }
 
@@ -39,6 +39,7 @@ section {
   position: relative;
   display: flex;
   width: 100%;
+  min-width: 304px;
   height: 100%;
   flex-direction: column;
   // overflow: hidden;

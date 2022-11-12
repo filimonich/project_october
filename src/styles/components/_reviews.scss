@@ -84,6 +84,11 @@
     flex-direction: column;
     justify-content: center;
 
+    
+    @include tablets {
+      margin-left: 0;
+    }
+
     @include phones {
       margin-left: 0;
     }
@@ -105,6 +110,15 @@
     color: $grey;
     width: rem(460px);
     margin-bottom: rem(26px);
+
+    @include tablets {
+      // white-space: normal;
+    }
+    
+    @include phones {
+      // white-space: normal;
+    }
+
   }
 
   &__author {

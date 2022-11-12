@@ -43,6 +43,7 @@ section {
   position: relative;
   display: flex;
   width: 100%;
+  min-width: 304px;
   height: 100%;
   flex-direction: column;
 }
@@ -684,6 +685,11 @@ btn {
   flex-direction: column;
   justify-content: center;
 }
+@media screen and (max-width: 768px) {
+  .reviews__content {
+    margin-left: 0;
+  }
+}
 @media screen and (max-width: 480px) {
   .reviews__content {
     margin-left: 0;
@@ -836,9 +842,17 @@ btn {
     justify-content: center;
   }
 }
-.form__buttons {
-  display: flex;
-  justify-content: center;
+@media screen and (max-width: 768px) {
+  .form__btns {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 480px) {
+  .form__btns {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .radio {
@@ -935,7 +949,7 @@ btn {
   margin-bottom: 0.4444444444rem;
 }
 .fixed-menu__item--active .fixed-menu__link {
-  border-color: #292929;
+  border-color: #E01F3D;
 }
 .fixed-menu__link {
   width: 0.8888888889rem;
