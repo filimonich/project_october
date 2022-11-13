@@ -23,7 +23,6 @@ body {
   margin: 0;
   background-color: #FFFFFF;
   font-family: "Play", "Alegreya Sans", Helvetica, sans-serif;
-  font-size: 18px;
   color: #292929;
   line-height: 1.42;
   position: relative;
@@ -41,15 +40,15 @@ section {
 
 .wrapper {
   position: relative;
-  display: flex;
   width: 100%;
-  min-width: 304px;
   height: 100%;
+  min-height: 100%;
+  display: flex;
   flex-direction: column;
 }
 
 .wrapper__main {
-  height: 100%;
+  min-height: 100%;
   transition: transform 1s;
   will-change: transform;
 }
@@ -102,9 +101,10 @@ btn {
 
 .container {
   margin: 0 auto;
-  max-width: 915px;
   width: 95%;
+  max-width: 915px;
   height: 100%;
+  position: relative;
 }
 
 .hero {
@@ -118,6 +118,7 @@ btn {
   }
 }
 .hero__container {
+  content: "";
   position: relative;
   display: flex;
   flex-direction: column;
@@ -180,7 +181,7 @@ btn {
   margin-bottom: 0.8333333333rem;
   text-transform: uppercase;
   max-width: 22.2222222222rem;
-  text-shadow: 0 4px 4px rgba(41, 41, 41, 0.25);
+  text-shadow: 0 0.2222222222rem 0.2222222222rem rgba(41, 41, 41, 0.25);
 }
 @media screen and (max-width: 768px) {
   .hero__main-title {
@@ -200,8 +201,8 @@ btn {
   line-height: 1.3333333333rem;
   font-size: 1.1666666667rem;
   margin-bottom: 2.1666666667rem;
-  font-size: 21px;
-  line-height: 25px;
+  font-size: 1.1666666667rem;
+  line-height: 1.3888888889rem;
   max-width: 21.2222222222rem;
 }
 @media screen and (max-width: 768px) {
@@ -294,7 +295,7 @@ btn {
   margin-right: 1.5rem;
   margin-bottom: 0.5555555556rem;
   font-family: "Alegreya Sans";
-  letter-spacing: 0px;
+  letter-spacing: 0;
 }
 .menu__item:last-child {
   margin-right: 0;
@@ -688,11 +689,13 @@ btn {
 @media screen and (max-width: 768px) {
   .reviews__content {
     margin-left: 0;
+    align-items: center;
   }
 }
 @media screen and (max-width: 480px) {
   .reviews__content {
     margin-left: 0;
+    align-items: center;
   }
 }
 .reviews__title {
@@ -714,6 +717,16 @@ btn {
   color: #666666;
   width: 25.5555555556rem;
   margin-bottom: 1.4444444444rem;
+}
+@media screen and (max-width: 768px) {
+  .reviews__text {
+    width: 99%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .reviews__text {
+    width: 99%;
+  }
 }
 .reviews__author {
   font-size: 0.8888888889rem;
@@ -1033,7 +1046,7 @@ btn {
 .socials__item {
   display: inline-block;
   vertical-align: middle;
-  margin-right: 10px;
+  margin-right: 0.5555555556rem;
 }
 .socials__link {
   width: 1.1111111111rem;
@@ -1056,11 +1069,11 @@ btn {
   }
 }
 .team__content--active {
-  height: 50px;
+  height: 2.7777777778rem;
 }
 @media screen and (max-width: 768px) {
   .team__content--active {
-    height: 340px;
+    height: 18.8888888889rem;
     margin-bottom: 1.6666666667rem;
   }
 }
@@ -1193,9 +1206,14 @@ btn {
 
 .footer-inner {
   width: 95%;
-  max-width: 940px;
+  max-width: 50.8333333333rem;
   margin: 0 auto;
   position: relative;
+}
+@media screen and (max-width: 480px) {
+  .footer-inner {
+    flex-direction: column;
+  }
 }
 
 .container-headline {
@@ -1232,7 +1250,7 @@ btn {
 }
 
 .container-player {
-  padding: 6.8rem 0px 9.4rem;
+  padding: 6.8rem 0 9.4rem;
   position: relative;
   display: flex;
   flex-direction: column;

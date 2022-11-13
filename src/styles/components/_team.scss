@@ -9,10 +9,10 @@
   }
 
   &__content--active {
-    height: 50px;
+    height: rem(50px);
 
     @include tablets {
-      height: 340px;
+      height: rem(340px);
       margin-bottom: rem(30px);
     }
 

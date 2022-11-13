@@ -87,10 +87,12 @@
     
     @include tablets {
       margin-left: 0;
+      align-items: center;
     }
 
     @include phones {
       margin-left: 0;
+      align-items: center;
     }
 
   }
@@ -113,10 +115,12 @@
 
     @include tablets {
       // white-space: normal;
+      width: 99%;
     }
     
     @include phones {
       // white-space: normal;
+      width: 99%;
     }
 
   }

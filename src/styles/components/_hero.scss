@@ -9,6 +9,7 @@
   }
 
   &__container {
+    content: '';
     position: relative;
     display: flex;
     flex-direction: column;
@@ -69,7 +70,7 @@
     margin-bottom: rem(15px);
     text-transform: uppercase;
     max-width: rem(400px);
-    text-shadow: 0 4px 4px rgb(41, 41, 41, 0.25);
+    text-shadow: 0 rem(4px) rem(4px) rgb(41, 41, 41, 0.25);
 
     @include tablets {
       max-width: rem(665px);
@@ -86,8 +87,8 @@
     @include Body1Semibold-Regular;
     font-size: rem(21px);
     margin-bottom: rem(39px);
-    font-size: 21px;
-    line-height: 25px;
+    font-size: rem(21px);
+    line-height: rem(25px);
     max-width: rem(382px);
 
     @include tablets {

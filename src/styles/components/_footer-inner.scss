@@ -1,6 +1,11 @@
 .footer-inner {
   width: 95%;
-  max-width: 940px;
+  // max-width: 940px;
+  max-width: rem(915px);
   margin: 0 auto;
   position: relative;
+
+  @include phones {
+    flex-direction: column;
+  }
 }

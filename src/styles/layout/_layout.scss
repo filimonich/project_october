@@ -18,8 +18,7 @@ body {
 body {
   margin: 0;
   background-color: $white;
-  font-family: "Play",'Alegreya Sans', Helvetica, sans-serif;
-  font-size: $baseFontSize;
+  font-family: "Play", 'Alegreya Sans', Helvetica, sans-serif;
   color: $black;
   line-height: 1.42;
   position: relative;
@@ -37,16 +36,17 @@ section {
 
 .wrapper {
   position: relative;
-  display: flex;
   width: 100%;
-  min-width: 304px;
+  // min-width: 400px;
   height: 100%;
+  min-height: 100%;
+  display: flex;
   flex-direction: column;
   // overflow: hidden;
 }
 
 .wrapper__main {
-  height: 100%;
+  min-height: 100%;
   transition: transform 1s;
   will-change: transform;
 }
