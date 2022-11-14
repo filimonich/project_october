@@ -128,14 +128,7 @@ btn {
 }
 @media screen and (max-width: 768px) {
   .hero__container {
-    background-size: 44% auto;
-    background-position: 50% 26%;
-  }
-}
-@media screen and (max-width: 480px) {
-  .hero__container {
-    background-size: 70% auto;
-    background-position: 50% 26%;
+    background: url(../../../src/image/main/BeatsSolo3-768.png) 50% 26% no-repeat;
   }
 }
 .hero__container::after {
