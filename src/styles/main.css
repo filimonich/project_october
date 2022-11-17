@@ -124,11 +124,11 @@ btn {
   flex-direction: column;
   justify-content: space-between;
   padding: 1.3333333333rem 0 3.6111111111rem;
-  background: url(../../../src/image/main/BeatsSolo3.png) right center/50% auto no-repeat;
+  background: url(./../../src/image/main/BeatsSolo3.png) right center/50% auto no-repeat;
 }
 @media screen and (max-width: 768px) {
   .hero__container {
-    background: url(../../../src/image/main/BeatsSolo3-768.png) 50% 26% no-repeat;
+    background: url(./../../src/image/main/BeatsSolo3-768.png) 50% 26% no-repeat;
   }
 }
 .hero__container::after {
@@ -330,6 +330,7 @@ btn {
 .menu--768 .menu__link {
   font-size: 2rem;
   line-height: 4rem;
+  color: #FFFFFF;
 }
 
 .contacts__tel {
@@ -985,6 +986,53 @@ btn {
   background: #E01F3D;
 }
 
+.hamburger {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .hamburger {
+    position: absolute;
+    top: 1.8888888889rem;
+    right: 5%;
+    width: 1.3333333333rem;
+    height: 1.1111111111rem;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 15;
+    transition: all 0.4s;
+    display: inline-flex;
+  }
+}
+.hamburger__plank {
+  width: 100%;
+  border-radius: 0.5555555556rem;
+  background: #292929;
+  height: 0.2222222222rem;
+  top: 0;
+  left: 0;
+  position: absolute;
+  transition: all 0.4s;
+}
+.hamburger__plank:nth-child(2) {
+  top: 49%;
+  transform: translateY(-50%);
+}
+.hamburger__plank:nth-child(3) {
+  bottom: 0;
+  top: initial;
+}
+
+.hamburger--active .hamburger__plank:nth-child(1) {
+  opacity: 0;
+}
+.hamburger--active .hamburger__plank:nth-child(2) {
+  transform: rotate(45deg);
+}
+.hamburger--active .hamburger__plank:nth-child(3) {
+  transform: rotate(-45deg) translateY(-0.2222222222rem) translateX(0.2222222222rem);
+}
+
 .footer {
   position: absolute;
   bottom: 0;
@@ -1048,6 +1096,34 @@ btn {
 }
 .socials__link:hover {
   fill: #292929;
+}
+
+.overlay {
+  display: none;
+  z-index: -9000;
+}
+@media screen and (max-width: 768px) {
+  .overlay {
+    height: 100%;
+    width: 100%;
+    background-color: #666666;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s;
+    position: fixed;
+    top: 0;
+    left: 100%;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.overlay--active {
+  left: 0;
+  opacity: 1;
+  z-index: 10;
 }
 
 .team {
