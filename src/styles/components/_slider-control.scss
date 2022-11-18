@@ -1,0 +1,11 @@
+.slider-control {
+  @include tablets {
+    margin-top: rem(240px);
+    align-self: start;
+  }
+
+  &__icon {
+    width: rem(24px);
+    height: rem(40px);
+  }
+}

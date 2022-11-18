@@ -1,0 +1,275 @@
+.slider {
+  padding: 0 rem(64px) rem(26px);
+
+  @include tablets {
+    padding: rem(50px);
+  }
+
+  &__wrapper {
+    display: flex;
+    // justify-content: space-between;
+    // align-items: center;
+    position: relative;
+    z-index: 10;
+
+    // &::before {
+    //   content: "";
+    //   position: absolute;
+    //   background: url('./../image/slider/puddle.svg') center center / cover no-repeat;
+    //   display: block;
+    //   width: rem(398px);
+    //   height: rem(378px);
+    //   top: 18%;
+    //   left: 0;
+    //   z-index: -10;
+
+    //   @include tablets {
+    //     width: rem(306px);
+    //     height: rem(292px);
+    //     top: 10%;
+    //     left: 8%;
+    //   }
+    // }
+
+    @include tablets {
+      flex-direction: column;
+      align-items: center;
+    }
+
+  }
+
+  &__img {
+    width: rem(420px);
+    height: rem(538px);
+    margin: 0 10%;
+
+    // &::before {
+    //   content: "";
+    //   position: absolute;
+    //   background: url('./../image/slider/puddle.svg') center center / cover no-repeat;
+    //   display: block;
+    //   width: rem(398px);
+    //   height: rem(378px);
+    //   top: 18%;
+    //   left: 10%;
+    //   z-index: -10;
+
+    //   @include tablets {
+    //     width: rem(306px);
+    //     height: rem(292px);
+    //     top: 10%;
+    //     left: 32%;
+    //   }
+
+    //   @include phones {
+    //     left: 22%;
+    //   }
+    // }
+
+    @include tablets {
+      width: rem(318px);
+      height: rem(418px);
+      margin-right: 0;
+    }
+
+    @include phones {
+      margin-right: 0;
+    }
+
+  }
+
+  &__pic {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+
+  }
+
+  &__items {
+    flex: 1;
+  }
+
+  &__dropdown {
+    width: rem(90px);
+    height: rem(90px);
+    // position: relative;
+    // display: inline-block;
+    cursor: pointer;
+    background-color: $grey;
+    color: $white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5%;
+    margin-bottom: rem(52px);
+    position: relative;
+
+    &:hover {
+      background-color: $grey;
+    }
+
+    &:hover .slider__description {
+      display: block;
+      opacity: 1;
+    }
+
+    @include tablets {
+      display: none;
+    }
+
+  }
+
+  &__parameters-icon {
+    fill: $white;
+    width: rem(38px);
+    height: rem(38px);
+
+  }
+
+  // &__dropdown-title {
+
+  // }
+
+  &__benefits {
+    width: rem(374px);
+    height: auto;
+
+    @include tablets {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+  }
+
+  &__benefits-text {
+    @include Body1Semibold-Regular;
+    color: $black;
+    margin-bottom: rem(24px);
+
+    @include tablets {
+      width: 140%;
+      text-align: center;
+    }
+
+    @include phones {
+      width: 98%;
+      text-align: center;
+    } 
+  }
+
+  &__title {
+    text-align: left;
+
+    @include tablets {
+      font-size: rem(30px);
+      text-align: center;
+      margin-bottom: rem(14px);
+    }
+  }
+
+  &__options {
+    display: flex;
+    text-align: left;
+    width: auto;
+    height: (60px);
+    align-items: center;
+    margin-bottom: rem(24px);
+  }
+
+  &__options-price {
+    display: flex;
+    text-align: left;
+    width: auto;
+    height: (60px);
+    align-items: center;
+    margin-bottom: rem(24px);
+    justify-content: space-between;
+  }
+
+  &__option {
+    margin-right: rem(55px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    @include tablets {
+      margin-right: rem(2px);
+      margin-left: rem(44px);
+    }
+  }
+
+  &__price {
+    font-size: rem(60px);
+    margin-right: rem(30px);
+
+    @include tablets {
+      margin-left: rem(10px);
+    }
+
+  }
+
+  &__option-size {
+    @include Body1Semibold-Regular;
+    color: $black;
+  }
+
+  &__size {
+    @include Body1Semibold-Regular;
+  }
+
+  &__description {
+    position: absolute;
+    background: $grey;
+    border-radius: rem(5px);
+    top: 0;
+    left: 100%;
+    display: none;
+    // display: block;
+    padding: rem(18px) rem(10px);
+
+    &:before {
+      content: "";
+      width: 0;
+      height: 0;
+      position: absolute;
+      top: 100%;
+    }
+  }
+
+  &__dropdown-list {
+    color: $black;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__dropdown-item {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: rem(246px);
+    height: rem(44px);
+
+  }
+
+  &__dropdown-icon {
+    width: rem(32px);
+    height: rem(32px);
+    margin-left: rem(15px);
+    margin-right: rem(12px);
+  }
+
+  &__dropdown-text {
+    @include Body1Semibold-Regular;
+    font-size: rem(16px);
+  }
+
+  &__dropdown-benefits {
+    @include Body1Semibold-Regular;
+    margin-left: auto;
+    margin-right: rem(15px);
+  }
+
+}
