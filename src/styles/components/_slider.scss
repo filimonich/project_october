@@ -1,36 +1,18 @@
 .slider {
-  padding: 0 rem(64px) rem(26px);
+  // padding: 0 rem(64px) rem(26px);
 
   @include tablets {
     padding: rem(50px);
   }
 
   &__wrapper {
-    width: rem(940px);
+    width: 100%;
     position: relative;
     z-index: 10;
     display: flex;
-    // justify-content: space-between;
-    // align-items: center;
+    align-items: center;
+    justify-content: space-between;
 
-    // &::before {
-    //   content: "";
-    //   position: absolute;
-    //   background: url('./../image/slider/puddle.svg') center center / cover no-repeat;
-    //   display: block;
-    //   width: rem(398px);
-    //   height: rem(378px);
-    //   top: 18%;
-    //   left: 0;
-    //   z-index: -10;
-
-    //   @include tablets {
-    //     width: rem(306px);
-    //     height: rem(292px);
-    //     top: 10%;
-    //     left: 8%;
-    //   }
-    // }
 
     @include tablets {
       flex-direction: column;
@@ -40,34 +22,8 @@
   }
 
   &__img {
-    // width: rem(420px);
-    // height: rem(538px);
-    width: 47%;
-    margin: 5% 5% 0;
-
-
-    // &::before {
-    //   content: "";
-    //   position: absolute;
-    //   background: url('./../image/slider/puddle.svg') center center / cover no-repeat;
-    //   display: block;
-    //   width: rem(398px);
-    //   height: rem(378px);
-    //   top: 18%;
-    //   left: 10%;
-    //   z-index: -10;
-
-    //   @include tablets {
-    //     width: rem(306px);
-    //     height: rem(292px);
-    //     top: 10%;
-    //     left: 32%;
-    //   }
-
-    //   @include phones {
-    //     left: 22%;
-    //   }
-    // }
+    width: 50%;
+    // margin: 5% 5% 0;
 
     @include tablets {
       width: rem(318px);
@@ -81,25 +37,16 @@
 
   }
 
-  // &__pic {
-  //   object-fit: cover;
-  //   width: 100%;
-  //   height: 100%;
-
-  // }
-
   &__items {
-    flex: 1;
+    width: 45%;
+    // flex: 1;
   }
 
   &__dropdown {
     width: rem(90px);
     height: rem(90px);
-    // position: relative;
-    // display: inline-block;
     cursor: pointer;
-    background-color: $grey;
-    color: $white;
+    background-color: $grey-parameters;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -108,13 +55,9 @@
     margin-bottom: rem(52px);
     position: relative;
 
-    &:hover {
-      background-color: $grey;
-    }
 
     &:hover .slider__description {
-      display: block;
-      opacity: 1;
+      max-height: 100vh;
     }
 
     @include tablets {
@@ -125,14 +68,10 @@
 
   &__parameters-icon {
     fill: $white;
-    width: rem(38px);
-    height: rem(38px);
+    width: rem(42px);
+    height: rem(42px);
 
   }
-
-  // &__dropdown-title {
-
-  // }
 
   &__benefits {
     width: rem(374px);
@@ -160,11 +99,13 @@
     @include phones {
       width: 98%;
       text-align: center;
-    } 
+    }
   }
 
   &__title {
     text-align: left;
+    font-size: rem(36px);
+    margin-bottom: rem(24px);
 
     @include tablets {
       font-size: rem(30px);
@@ -225,27 +166,22 @@
 
   &__description {
     position: absolute;
-    background: $grey;
-    border-radius: rem(5px);
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 4px 4px 40px rgba(0, 0, 0, 0.06);
+    backdrop-filter: blur(20px);
     top: 0;
     left: 100%;
-    display: none;
-    // display: block;
-    padding: rem(18px) rem(10px);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s;
 
-    &:before {
-      content: "";
-      width: 0;
-      height: 0;
-      position: absolute;
-      top: 100%;
-    }
   }
 
   &__dropdown-list {
     color: $black;
     display: flex;
     flex-direction: column;
+    padding: rem(18px) rem(10px);
   }
 
   &__dropdown-item {
@@ -262,6 +198,7 @@
     height: rem(32px);
     margin-left: rem(15px);
     margin-right: rem(12px);
+    fill: #000000;
   }
 
   &__dropdown-text {

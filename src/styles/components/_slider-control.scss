@@ -1,4 +1,9 @@
 .slider-control {
+  // position: absolute;
+  // left: -105px;
+  // top: 51%;
+
+
   @include tablets {
     margin-top: rem(240px);
     align-self: start;
@@ -7,5 +12,20 @@
   &__icon {
     width: rem(24px);
     height: rem(40px);
+    // position: absolute;
+    // left: 102%;
+    // top: 51%;
+  }
+
+  &__icon-left {
+    position: absolute;
+    left: -5%;
+    top: 51%;
+  }
+  
+  &__icon-right {
+    position: absolute;
+    left: 100%;
+    top: 51%;
   }
 }
