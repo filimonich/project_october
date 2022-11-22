@@ -43,10 +43,16 @@ $phones: 480px;
 @mixin Body2Regular {
   font-size: rem(16px);
   font-weight: 400;
-  line-height: rem(18px);
+  line-height: rem(19px);
 }
 
-@mixin Body1Semibold-Regular {
+@mixin Body1Semibold {
+  font-size: rem(16px);
+  font-weight: 400;
+  line-height: rem(24px);
+}
+
+@mixin Body1Regular {
   font-size: rem(16px);
   font-weight: 400;
   line-height: rem(24px);
@@ -57,6 +63,7 @@ $phones: 480px;
   font-weight: 400;
   line-height: rem(18px);
   font-style: normal;
+  color: rgba(102, 102, 102, 1);
 }
 
 // colors

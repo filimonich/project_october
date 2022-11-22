@@ -93,7 +93,7 @@
   }
 
   &__benefits-text {
-    @include Body1Semibold-Regular;
+    @include Body1Semibold;
     color: $black;
     margin-bottom: rem(24px);
 
@@ -162,12 +162,12 @@
   }
 
   &__option-size {
-    @include Body1Semibold-Regular;
+    @include Body1Semibold;
     color: $black;
   }
 
   &__size {
-    @include Body1Semibold-Regular;
+    @include Body1Semibold;
   }
 
   &__description {
@@ -208,12 +208,12 @@
   }
 
   &__dropdown-text {
-    @include Body1Semibold-Regular;
+    @include Body1Semibold;
     font-size: rem(16px);
   }
 
   &__dropdown-benefits {
-    @include Body1Semibold-Regular;
+    @include Body1Semibold;
     margin-left: auto;
     margin-right: rem(15px);
   }

@@ -42,37 +42,44 @@
     }
   }
 
-  &__item.team__content--active {
-    .team__img::after {
-      transform: rotate(180deg);
+  
+  &__member {
+    margin-bottom: rem(22px);
+    
+    @include tablets {
+      padding-top: rem(15px);
+    }
+    
+    @include phones {
+      max-width: rem(126px);
+      left: 30%;
+      position: relative;
+      margin: 0;
     }
   }
 
-  &__member {
-    margin-bottom: rem(22px);
-  }
-
+  
   &__title {
     color: $black;
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: rem(8px);
-
+    margin-bottom: rem(11px);
+    
     @include tablets {
       margin-bottom: 0;
     }
-
+    
     @include phones {
       margin-bottom: 0;
     }
   }
-
+  
   &__name {
-    @include Body1Semibold-Regular;
+    @include Body2Bold;
     font-size: rem(20px);
     cursor: pointer;
-
+    
     &::after {
       content: "";
       display: inline-block;
@@ -83,26 +90,46 @@
       border-style: solid;
       border-width: rem(7px) rem(4.5px) 0px rem(4.5px);
       border-color: #e01f3c transparent transparent transparent;
-    }
-
+      transition: transform .3s;
+    }    
   }
 
+  &__item.team__content--active {
+    .team__name::after {
+      transform: rotate(180deg);
+    }
+  }
+  
   &__content {
-    max-width: rem(200px);
+    max-width: rem(222px);
     overflow: hidden;
     transition: height .3s;
     height: 0;
     position: absolute;
 
     @include tablets {
+      max-width: rem(228px);
       height: 0;
       position: relative;
+    }
+
+    @include tablets {
+      max-width: rem(316px);
     }
   }
 
   &__profession {
-    @include Body1Semibold-Regular;
+    @include Body2Regular;
+    color: #000000;
     margin-bottom: rem(4px);
+
+    @include tablets {
+      @include Body2Bold;
+    }
+
+    @include phones {
+      margin-top: rem(8px);
+    }
   }
 
   &__description {
@@ -116,9 +143,9 @@
   }
 }
 
-.team--version--desktop .team__content {
-  top: 100%;
-}
+// .team--version--desktop .team__content {
+//   margin-top: 1%;
+// }
 
 .team--version--mobile {
   display: none;

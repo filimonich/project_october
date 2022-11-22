@@ -1,6 +1,6 @@
 .form {
   display: flex;
-  @include Body1Semibold-Regular;
+  @include Body1Semibold;
   color: $white;
 
   @include tablets {

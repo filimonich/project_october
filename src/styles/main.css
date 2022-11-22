@@ -257,6 +257,7 @@ btn {
   font-weight: 400;
   line-height: 1rem;
   font-style: normal;
+  color: rgb(102, 102, 102);
 }
 .aside__icon {
   width: 2.2777777778rem;
@@ -411,7 +412,7 @@ btn {
 .btn--theme--transparent {
   font-size: 0.8888888889rem;
   font-weight: 400;
-  line-height: 1rem;
+  line-height: 1.0555555556rem;
   text-transform: none;
   color: #FFFFFF;
 }
@@ -466,7 +467,7 @@ btn {
 .headline__subtitle {
   font-size: 0.8888888889rem;
   font-weight: 400;
-  line-height: 1rem;
+  line-height: 1.0555555556rem;
   color: #666666;
   padding: 0 20%;
   margin-bottom: 2.7777777778rem;
@@ -552,6 +553,7 @@ btn {
   font-weight: 400;
   line-height: 1rem;
   font-style: normal;
+  color: rgb(102, 102, 102);
 }
 
 .benefits {
@@ -1422,18 +1424,28 @@ btn {
 .team__item:last-child {
   margin-right: 0;
 }
-.team__item.team__content--active .team__img::after {
-  transform: rotate(180deg);
-}
 .team__member {
   margin-bottom: 1.2222222222rem;
+}
+@media screen and (max-width: 768px) {
+  .team__member {
+    padding-top: 0.8333333333rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .team__member {
+    max-width: 7rem;
+    left: 30%;
+    position: relative;
+    margin: 0;
+  }
 }
 .team__title {
   color: #292929;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 0.4444444444rem;
+  margin-bottom: 0.6111111111rem;
 }
 @media screen and (max-width: 768px) {
   .team__title {
@@ -1446,9 +1458,9 @@ btn {
   }
 }
 .team__name {
-  font-size: 0.8888888889rem;
-  font-weight: 400;
-  line-height: 1.3333333333rem;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.2222222222rem;
   font-size: 1.1111111111rem;
   cursor: pointer;
 }
@@ -1462,9 +1474,13 @@ btn {
   border-style: solid;
   border-width: 0.3888888889rem 0.25rem 0px 0.25rem;
   border-color: #e01f3c transparent transparent transparent;
+  transition: transform 0.3s;
+}
+.team__item.team__content--active .team__name::after {
+  transform: rotate(180deg);
 }
 .team__content {
-  max-width: 11.1111111111rem;
+  max-width: 12.3333333333rem;
   overflow: hidden;
   transition: height 0.3s;
   height: 0;
@@ -1472,31 +1488,47 @@ btn {
 }
 @media screen and (max-width: 768px) {
   .team__content {
+    max-width: 12.6666666667rem;
     height: 0;
     position: relative;
+  }
+}
+@media screen and (max-width: 768px) {
+  .team__content {
+    max-width: 17.5555555556rem;
   }
 }
 .team__profession {
   font-size: 0.8888888889rem;
   font-weight: 400;
-  line-height: 1.3333333333rem;
+  line-height: 1.0555555556rem;
+  color: #000000;
   margin-bottom: 0.2222222222rem;
+}
+@media screen and (max-width: 768px) {
+  .team__profession {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.2222222222rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .team__profession {
+    margin-top: 0.4444444444rem;
+  }
 }
 .team__description {
   font-size: 0.8888888889rem;
   font-weight: 400;
   line-height: 1rem;
   font-style: normal;
+  color: rgb(102, 102, 102);
 }
 
 @media screen and (max-width: 768px) {
   .team--version--desktop {
     display: none;
   }
-}
-
-.team--version--desktop .team__content {
-  top: 100%;
 }
 
 .team--version--mobile {
