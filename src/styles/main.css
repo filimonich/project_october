@@ -1184,6 +1184,13 @@ btn {
 .slider__items {
   width: 45%;
 }
+@media screen and (max-width: 768px) {
+  .slider__items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .slider__dropdown {
   width: 5rem;
   height: 5rem;

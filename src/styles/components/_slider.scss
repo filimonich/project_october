@@ -40,6 +40,12 @@
   &__items {
     width: 45%;
     // flex: 1;
+
+    @include tablets {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
   }
 
   &__dropdown {
