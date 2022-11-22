@@ -11,6 +11,18 @@
     box-shadow: none;
   }
 
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    background: #000;
+    height: rem(31px);
+    width: rem(31px);
+    right: 1%;
+    top: 99.5%;
+    transform: rotate(29deg);
+  }
+
   @include tablets {
     justify-content: center;
   }

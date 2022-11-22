@@ -1143,6 +1143,17 @@ btn {
   background: transparent;
   box-shadow: none;
 }
+.slider-container::after {
+  content: "";
+  display: block;
+  position: absolute;
+  background: #000;
+  height: 1.7222222222rem;
+  width: 1.7222222222rem;
+  right: 1%;
+  top: 99.5%;
+  transform: rotate(29deg);
+}
 @media screen and (max-width: 768px) {
   .slider-container {
     justify-content: center;
