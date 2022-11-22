@@ -22,7 +22,8 @@
   }
 
   &__img {
-    width: 50%;
+    width: 48%;
+    margin-left: 5%;
     // margin: 5% 5% 0;
 
     @include tablets {
@@ -38,7 +39,7 @@
   }
 
   &__items {
-    width: 45%;
+    width: 44%;
     // flex: 1;
 
     @include tablets {

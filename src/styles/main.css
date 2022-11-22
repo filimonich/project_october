@@ -1180,7 +1180,8 @@ btn {
   }
 }
 .slider__img {
-  width: 50%;
+  width: 48%;
+  margin-left: 5%;
 }
 @media screen and (max-width: 768px) {
   .slider__img {
@@ -1195,7 +1196,7 @@ btn {
   }
 }
 .slider__items {
-  width: 45%;
+  width: 44%;
 }
 @media screen and (max-width: 768px) {
   .slider__items {
@@ -1380,7 +1381,7 @@ btn {
 }
 .slider-control__icon-left {
   position: absolute;
-  left: -5%;
+  left: -2%;
   top: 51%;
 }
 .slider-control__icon-right {
