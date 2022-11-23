@@ -25,7 +25,6 @@
     @include phones {
       width: rem(90px);
     }
-
     // &::before {
     //   content: "";
     //   background: rgb(0, 0, 0, 0.6);
@@ -48,11 +47,8 @@
     font-size: 36px;
     line-height: 43px;
     color: $white;
-
     transform: rotate(-90deg) translateX(55%);
     white-space: nowrap;
-
-
     // position: relative;
     // left: 50%;
     // bottom: 14%;
@@ -84,12 +80,8 @@
     @include phones {
       min-width: calc(100vw - 8rem);
     }
-
   }
-
-
 }
-
 
 .products-active>.products-menu__content {
   width: rem(624px);

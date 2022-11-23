@@ -33,7 +33,10 @@
     }
 
     @include phones {
+      width: rem(306px);
+      height: rem(306px);
       margin-right: 0;
+      margin-bottom: 5%;
     }
 
   }
@@ -46,6 +49,10 @@
       display: flex;
       flex-direction: column;
       align-items: center;
+    }
+
+    @include phones {
+      width: 81%;
     }
   }
 
@@ -94,8 +101,8 @@
   }
 
   &__benefits-text {
-    @include Body1Semibold;
-    color: $black;
+    @include Body2Regular;
+    color: $grey;
     margin-bottom: rem(24px);
 
     @include tablets {
@@ -104,7 +111,7 @@
     }
 
     @include phones {
-      width: 98%;
+      width: 108%;
       text-align: center;
     }
   }
@@ -128,6 +135,13 @@
     height: (60px);
     align-items: center;
     margin-bottom: rem(24px);
+    
+
+    @include phones {
+      justify-content: space-between;
+      width: 66%;
+      margin: 0;
+    }
   }
 
   &__options-price {
@@ -141,7 +155,7 @@
   }
 
   &__option {
-    margin-right: rem(55px);
+    margin-right: rem(110px);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -149,6 +163,10 @@
     @include tablets {
       margin-right: rem(2px);
       margin-left: rem(44px);
+    }
+
+    @include phones {
+      margin: 0;
     }
   }
 
@@ -163,12 +181,12 @@
   }
 
   &__option-size {
-    @include Body1Semibold;
+    @include Body2Regular;
     color: $black;
   }
 
   &__size {
-    @include Body1Semibold;
+    @include Body2Bold;
   }
 
   &__description {

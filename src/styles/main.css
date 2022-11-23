@@ -1192,7 +1192,10 @@ btn {
 }
 @media screen and (max-width: 480px) {
   .slider__img {
+    width: 17rem;
+    height: 17rem;
     margin-right: 0;
+    margin-bottom: 5%;
   }
 }
 .slider__items {
@@ -1203,6 +1206,11 @@ btn {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+}
+@media screen and (max-width: 480px) {
+  .slider__items {
+    width: 81%;
   }
 }
 .slider__dropdown {
@@ -1246,8 +1254,8 @@ btn {
 .slider__benefits-text {
   font-size: 0.8888888889rem;
   font-weight: 400;
-  line-height: 1.3333333333rem;
-  color: #292929;
+  line-height: 1.0555555556rem;
+  color: #666666;
   margin-bottom: 1.3333333333rem;
 }
 @media screen and (max-width: 768px) {
@@ -1258,7 +1266,7 @@ btn {
 }
 @media screen and (max-width: 480px) {
   .slider__benefits-text {
-    width: 98%;
+    width: 108%;
     text-align: center;
   }
 }
@@ -1282,6 +1290,13 @@ btn {
   align-items: center;
   margin-bottom: 1.3333333333rem;
 }
+@media screen and (max-width: 480px) {
+  .slider__options {
+    justify-content: space-between;
+    width: 66%;
+    margin: 0;
+  }
+}
 .slider__options-price {
   display: flex;
   text-align: left;
@@ -1292,7 +1307,7 @@ btn {
   justify-content: space-between;
 }
 .slider__option {
-  margin-right: 3.0555555556rem;
+  margin-right: 6.1111111111rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1301,6 +1316,11 @@ btn {
   .slider__option {
     margin-right: 0.1111111111rem;
     margin-left: 2.4444444444rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .slider__option {
+    margin: 0;
   }
 }
 .slider__price {
@@ -1315,13 +1335,13 @@ btn {
 .slider__option-size {
   font-size: 0.8888888889rem;
   font-weight: 400;
-  line-height: 1.3333333333rem;
+  line-height: 1.0555555556rem;
   color: #292929;
 }
 .slider__size {
-  font-size: 0.8888888889rem;
-  font-weight: 400;
-  line-height: 1.3333333333rem;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.2222222222rem;
 }
 .slider__description {
   position: absolute;
@@ -1384,10 +1404,22 @@ btn {
   left: -2%;
   top: 51%;
 }
+@media screen and (max-width: 480px) {
+  .slider-control__icon-left {
+    top: 27%;
+    left: 2%;
+  }
+}
 .slider-control__icon-right {
   position: absolute;
   left: 100%;
   top: 51%;
+}
+@media screen and (max-width: 480px) {
+  .slider-control__icon-right {
+    top: 27%;
+    left: 92%;
+  }
 }
 
 .team {

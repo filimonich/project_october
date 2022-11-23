@@ -21,11 +21,21 @@
     position: absolute;
     left: -2%;
     top: 51%;
+
+    @include phones {
+      top: 27%;
+      left: 2%;
+    }
   }
   
   &__icon-right {
     position: absolute;
     left: 100%;
     top: 51%;
+
+    @include phones {
+      top: 27%;
+      left: 92%;
+    }
   }
 }
