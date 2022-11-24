@@ -157,6 +157,10 @@
     }
   }
 
+  &__switcher-item.reviews__item--active {
+    border-color: $red;
+  }
+
   &__switcher-link {
     position: absolute;
     top: 0;

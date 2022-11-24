@@ -753,6 +753,9 @@ btn {
 .reviews__switcher-item--active, .reviews__switcher-item:hover {
   border-color: #E01F3D;
 }
+.reviews__switcher-item.reviews__item--active {
+  border-color: #E01F3D;
+}
 .reviews__switcher-link {
   position: absolute;
   top: 0;
