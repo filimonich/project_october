@@ -38,13 +38,11 @@
     position: absolute;
     display: flex;
     pointer-events: none;
-    transition: .3s;
     opacity: 0;
     top: rem(42px);
     right: 0;
     bottom: 0;
     left: rem(42px);
-    transition-delay: 0.1s;
 
     @include tablets {
       flex-direction: column;
@@ -82,7 +80,7 @@
     margin-left: rem(40px);
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
 
     
     @include tablets {
