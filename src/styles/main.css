@@ -1026,6 +1026,9 @@ button {
   top: initial;
 }
 
+.hamburger--active .hamburger__plank {
+  background: #FFFFFF;
+}
 .hamburger--active .hamburger__plank:nth-child(1) {
   opacity: 0;
 }
@@ -1109,7 +1112,7 @@ button {
   .overlay {
     height: 100%;
     width: 100%;
-    background-color: #666666;
+    background-color: #333537;
     display: flex;
     align-items: center;
     justify-content: center;
