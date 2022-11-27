@@ -1,0 +1,27 @@
+{
+  "name": "project_october",
+  "version": "1.0.0",
+  "description": "Текстовый файл для дополнительных записей",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/filimonich/project_october.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/filimonich/project_october/issues"
+  },
+  "homepage": "https://github.com/filimonich/project_october#readme",
+  "dependencies": {
+    "@fancyapps/fancybox": "^3.5.7",
+    "bxslider": "^4.2.14",
+    "fancybox": "^3.0.1",
+    "jquery": "^3.6.1",
+    "normalize.css": "^8.0.1"
+  }
+}
