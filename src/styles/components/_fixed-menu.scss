@@ -20,6 +20,9 @@
     .fixed-menu__link {
       border-color: $red;
     }
+    .fixed-menu__link::before {
+      background: $red;
+    } 
   }
 
   &__link {
@@ -43,15 +46,4 @@
       transform: translate(-50%, -50%);
     }
   }
-}
-
-.fixed-menu__item--shadowed {
-  .fixed-menu__item--active {
-    .fixed-menu__link {
-      border-color: $red;
-    }
-  }
-  .fixed-menu__link::before {
-    background: $red;
-  } 
 }

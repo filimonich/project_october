@@ -22,6 +22,8 @@
     "bxslider": "^4.2.14",
     "fancybox": "^3.0.1",
     "jquery": "^3.6.1",
+    "jquery-touchswipe": "^1.6.19",
+    "mobile-detect": "^1.4.5",
     "normalize.css": "^8.0.1"
   }
 }
