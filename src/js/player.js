@@ -3,7 +3,7 @@ var video = document.getElementById('video'),
     playPause = document.getElementsByClassName('playpause')[0],
     progress = document.getElementsByClassName('progress')[0],
     volume = document.getElementsByClassName('volume-input')[0],
-    icon = document.getElementsByClassName('video__icon')[0],
+    icon = document.getElementsByClassName('player__icon')[0],
     volumeIcon = document.getElementsByClassName('volume__icon')[0],
     updateProgress;
 

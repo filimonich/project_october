@@ -1,30 +1,25 @@
 .player-section__container {
   width: 90%;
 }
-.video {
+
+.player {
   width: 100%;
   position: relative;
-}
-video {
-  height: 100%;
-  width: 100%;
-  position: relative;
-}
-.video__icon {
-  fill: #fff;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 30%;
-  height: 30%;
-}
 
-
+  &__icon {
+    fill: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30%;
+    height: 30%;
+  }
+}
 
 .controls {
   position: absolute;
-  height: 3.6rem;
+  height: rem(30px);
   width: 100%;
   bottom: 0;
   background: #151515;
@@ -34,14 +29,17 @@ video {
   padding-left: 10px;
   padding-right: 10px;
 }
+
 .progress {
   width: 68%;
   margin-right: 20px;
 }
+
 .playpause {
   margin-right: 10px;
   width: 15px;
 }
+
 .pause {
   cursor: pointer;
   height: 0;
@@ -50,6 +48,7 @@ video {
   border-right-width: 0;
   background: transparent;
 }
+
 .play {
   cursor: pointer;
   border: 7px solid #fff;
@@ -63,15 +62,17 @@ video {
   display: flex;
   align-items: center;
   width: 30%;
+
+  &__icon {
+    fill: #fff;
+    width: 18px;
+    height: 18px;
+    margin-right: 10px;
+    cursor: pointer;
+    flex-shrink: 0;
+  }
 }
-.volume__icon {
-  fill: #fff;
-  width: 18px;
-  height: 18px;
-  margin-right: 10px;
-  cursor: pointer;
-  flex-shrink: 0;
-}
+
 .volume-input {
   width: 100%;
 }
