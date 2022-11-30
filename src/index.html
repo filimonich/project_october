@@ -699,8 +699,7 @@
                   <use xlink:href="./image/sprite/sprite.svg#play-btn"></use>
               </svg>
               <div class="controls">
-                <div class="playpause pause">
-                </div>
+                <div class="playpause pause"></div>
                 <input class="progress" type="range" value="0">
                 <div class="volume">
                   <svg class="volume__icon">
@@ -710,7 +709,6 @@
                 </div>
               </div>
             </div>
-
             <div class="player-decor">
               <div class="player-decor__pentagon"></div>
             </div>
@@ -808,11 +806,7 @@
       </section>
 
       <section data-sidemenu-theme="black" data-section-id="contacts" class="section section-map">
-        <div class="container-map">
-          <div class="map">
-            <img src="./image/map/map.png" alt="map" class="map__icon">
-          </div>
-        </div>
+        <div class="container-map" id="map"></div>
         <footer class="footer">
           <div class="footer-inner footer__contacts">
             <address class="contacts">
@@ -854,7 +848,6 @@
 
         </footer>
       </section>
-
 
     </div>
   </div>
@@ -900,5 +893,8 @@
   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 <script src="https://www.youtube.com/iframe_api"></script>
 <script src="./js/player.js"></script>
+
+<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+<script src="./js/map.js"></script>
 
 </html>

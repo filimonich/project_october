@@ -1880,13 +1880,6 @@ how to remove the virtical space around the range input in IE*/
   position: relative;
 }
 
-.container-map {
-  overflow: hidden;
-  margin: 0 auto;
-  height: 100%;
-  width: 50%;
-}
-
 .footer-inner {
   width: 95%;
   max-width: 50.8333333333rem;
@@ -2041,4 +2034,9 @@ how to remove the virtical space around the range input in IE*/
 
 .volume-input {
   width: 100%;
+}
+
+.container-map {
+  overflow: hidden;
+  height: 100%;
 }/*# sourceMappingURL=main.css.map */
