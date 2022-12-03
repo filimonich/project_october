@@ -21,48 +21,6 @@ const countSectionPosition = (sectionEq) => {
   return position;
 };
 
-// const changeMenuThemeForSection = (sectionEq) => {
-//     const currentSection = section.eq(sectionEq);
-//     const menuTheme = currentSection.attr("data-sidemenu-theme");
-//     const activeClass = "fixed-menu__item--shadowed";
-
-//     if (menuTheme == "black") {
-//       sideMenu.addClass(activeClass);
-//     } else {
-//       sideMenu.removeClass("fixed-menu__item--shadowed")
-//     }
-// };
-
-// const resetActiveClassForItem = (item, itemEq, activeClass) => {
-//   item.eq(itemEq).addClass(activeClass).siblings().removeClass(activeClass);
-// };
-
-// const performTransition = sectionEq => {
-//   if (inScroll) return;
-
-//   const transitionOver = 1000;
-//   const mouseInertiaOver = 300;
-
-//   inScroll = true;
-
-//   const position = countSectionPosition(sectionEq);
-
-//   changeMenuThemeForSection(sectionEq);
-      
-//   display.css({
-//     transform: `translateY(${position}%)`,
-//   });
-  
-//   resetActiveClassForItem(section, sectionEq, "active");
-
-//   setTimeout(() => {
-//     inScroll = false;
-//     resetActiveClassForItem(menuItems, sectionEq, "fixed-menu__item--active");
-
-//   }, transitionOver + mouseInertiaOver);
-
-// };
-
 const performTransition = sectionEq => {
   if(inScroll == false) {
       inScroll = true;
