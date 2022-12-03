@@ -91,11 +91,11 @@
   // z-index: 10;
 
   @include tablets {
-    width: calc(100vw - 30rem);
+    width: calc(100vw - 16.9rem);
   }
 
   @include phones {
-    width: calc(100vw - 8rem);
+    width: calc(100vw - 5rem);
     // min-width: rem(124px);
     z-index: 2;
   }
@@ -105,4 +105,8 @@
   @include phones {
     position: absolute;
   }
+}
+
+li.products-menu__item.products-active {
+  width: 100%;
 }

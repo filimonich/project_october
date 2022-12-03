@@ -1860,12 +1860,12 @@ how to remove the virtical space around the range input in IE*/
 }
 @media screen and (max-width: 768px) {
   .products-active > .products-menu__content {
-    width: calc(100vw - 30rem);
+    width: calc(100vw - 16.9rem);
   }
 }
 @media screen and (max-width: 480px) {
   .products-active > .products-menu__content {
-    width: calc(100vw - 8rem);
+    width: calc(100vw - 5rem);
     z-index: 2;
   }
 }
@@ -1874,6 +1874,10 @@ how to remove the virtical space around the range input in IE*/
   .products-active {
     position: absolute;
   }
+}
+
+li.products-menu__item.products-active {
+  width: 100%;
 }
 
 .section-map {
