@@ -15,6 +15,7 @@
     border-radius: 50%;
     overflow: hidden;
   }
+
   &__icon {
     width: rem(68px);
     height: rem(68px);
@@ -45,6 +46,6 @@
 
   &__desc {
     color: $grey;
-    @include  BodyLight;
+    @include BodyLight;
   }
 }

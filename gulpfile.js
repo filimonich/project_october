@@ -1,6 +1,6 @@
 const { src, dest, task, series, watch, parallel } = require("gulp");
 const rm = require('gulp-rm');
-const sass = require("gulp-sass")(require("node-sass"));
+const sass = require('gulp-sass')(require('node-sass'));
 const concat = require('gulp-concat');
 const browserSync = require('browser-sync').create();
 const reload = browserSync.reload;
@@ -22,13 +22,30 @@ const { SRC_PATH, DIST_PATH, STYLE_LIBS, JS_LIBS } = require('./gulp.config');
 task('clean', () => {
   return src(`${DIST_PATH}/**/*`, { read: false })
     .pipe(rm())
-})
+});
 
 task('copy:html', () => {
   return src(`${SRC_PATH}/*.html`)
     .pipe(dest(DIST_PATH))
     .pipe(reload({ stream: true }));
-})
+});
+
+const image = [
+  `${SRC_PATH}/image/*.png`,
+  `${SRC_PATH}/image/*.jpg`,
+  `${SRC_PATH}/image/*.svg`
+];
+
+task('copy:image', () => {
+  return src(`${SRC_PATH}/image/**/*`)
+  .pipe(dest(`${DIST_PATH}/images`));
+});
+
+task('copy:video', () => {
+  return src(`${SRC_PATH}/video/*.mp4`)
+    .pipe(dest(`${DIST_PATH}/video`))
+    .pipe(reload({ stream: true }));
+});
 
 task("styles", () => {
   return src([...STYLE_LIBS, "src/styles/main.scss"])
@@ -47,14 +64,15 @@ task("styles", () => {
     .pipe(gulpif(env === 'prod', gcmq()))
     .pipe(gulpif(env === 'prod', cleanCSS()))
     .pipe(gulpif(env === 'dev', sourcemaps.write()))
-    .pipe(dest(`${DIST_PATH}/styles`))
+    // .pipe(dest(`${DIST_PATH}/styles`))
+    .pipe(dest(DIST_PATH))
     .pipe(reload({ stream: true }));
 });
 
-const libs = [
-  'node_modules/jquery/dist/jquery.js',
-  'src/scripts/*.js'
-];
+// const libs = [
+//   'node_modules/jquery/dist/jquery.js',
+//   'src/scripts/*.js'
+// ];
 
 task('scripts', () => {
   return src([...JS_LIBS, 'src/scripts/*.js'])
@@ -70,7 +88,7 @@ task('scripts', () => {
 });
 
 task('icons', () => {
-  return src(`${SRC_PATH}/images/icons/*.svg`)
+  return src(`${SRC_PATH}/image/sprite/*.svg`)
     .pipe(svgo({
       plugins: [
         {
@@ -87,7 +105,7 @@ task('icons', () => {
         }
       }
     }))
-    .pipe(dest(`${DIST_PATH}/images/icons`));
+    .pipe(dest(`${DIST_PATH}/images/sprite`));
 });
 
 task('server', () => {
@@ -102,14 +120,14 @@ task('server', () => {
 task('watch', () => {
   watch('./src/styles/**/*.scss', series('styles'));
   watch('./src/*.html', series('copy:html'));
-  watch('./src/scripts/*.js', series('scripts'));
-  watch('./src/images/icons/*.svg', series('icons'));
+  watch('./src/js/*.js', series('scripts'));
+  watch('./src/images/sprite/*.svg', series('icons'));
 });
 
 task('default',
   series(
     'clean',
-    parallel('copy:html', 'styles', 'scripts', 'icons'),
+    parallel('copy:html', 'styles', 'scripts', 'icons', "copy:image", "copy:video"),
     parallel('watch', 'server')
   )
 );
@@ -117,5 +135,5 @@ task('default',
 task('build',
   series(
     'clean',
-    parallel('copy:html', 'styles', 'scripts', 'icons'))
+    parallel('copy:html', 'styles', 'scripts', 'icons', "copy:image", "copy:video"))
 );

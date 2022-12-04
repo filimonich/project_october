@@ -69,7 +69,7 @@
     margin-bottom: rem(15px);
     text-transform: uppercase;
     max-width: rem(400px);
-    text-shadow: 0 rem(4px) rem(4px) rgb(41, 41, 41, 0.25);
+    text-shadow: 0 rem(4px) rem(4px) #cacaca;
 
     @include tablets {
       max-width: rem(665px);

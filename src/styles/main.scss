@@ -85,54 +85,58 @@ $z-fixed-menu: 100;
 
 //media
 
-@import "./media/_media.scss";
+// @import "./media/_media.scss";
 
 //setup
 
 @import url("https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans&display=swap');
-@import "./layout/_layout.scss";
+// @import "./layout/_layout.scss";
 
 // components
 
-@import "./components/_container.scss";
-@import "./components/_hero.scss";
-@import "./components/_header.scss";
-@import "./components/_asides.scss";
-@import "./components/_aside.scss";
-@import "./components/_menu.scss";
-@import "./components/_contacts.scss";
-@import "./components/_logo.scss";
-@import "./components/_header.scss";
-@import "./components/_btn.scss";
-@import "./components/_section.scss";
-@import "./components/_headline.scss";
-@import "./components/_benefit.scss";
-@import "./components/_benefits.scss";
-@import "./components/_reviews.scss";
-@import "./components/_form.scss";
-@import "./components/_radio.scss";
-@import "./components/_section-form.scss";
-@import "./components/_container-form.scss";
-@import "./components/_fixed-menu.scss";
-@import "./components/_hamburger.scss";
-@import "./components/_footer.scss";
-@import "./components/_socials.scss";
-@import "./components/_overlay.scss";
-@import "./components/_section-slider.scss";
-@import "./components/_slider-container.scss";
-@import "./components/_slider.scss";
-@import "./components/_slider-control.scss";
-@import "./components/_team.scss";
-@import "./components/_modal.scss";
-@import "./components/_products-menu-section.scss";
-@import "./components/_products-menu.scss";
-@import "./components/_section-map.scss";
-@import "./components/_footer-inner.scss";
-@import "./components/_container-headline.scss";
-@import "./components/_container-team.scss";
-@import "./components/_container-reviews.scss";
-@import "./components/_container-player.scss";
-@import "./components/_player-decor.scss";
-@import "./components/_player.scss";
-@import "./components/_container-map.scss";
+@import "./media/*";
+@import "./layout/*";
+@import "./components/*";
+
+// @import "./components/_container.scss";
+// @import "./components/_hero.scss";
+// @import "./components/_header.scss";
+// @import "./components/_asides.scss";
+// @import "./components/_aside.scss";
+// @import "./components/_menu.scss";
+// @import "./components/_contacts.scss";
+// @import "./components/_logo.scss";
+// @import "./components/_header.scss";
+// @import "./components/_btn.scss";
+// @import "./components/_section.scss";
+// @import "./components/_headline.scss";
+// @import "./components/_benefit.scss";
+// @import "./components/_benefits.scss";
+// @import "./components/_reviews.scss";
+// @import "./components/_form.scss";
+// @import "./components/_radio.scss";
+// @import "./components/_section-form.scss";
+// @import "./components/_container-form.scss";
+// @import "./components/_fixed-menu.scss";
+// @import "./components/_hamburger.scss";
+// @import "./components/_footer.scss";
+// @import "./components/_socials.scss";
+// @import "./components/_overlay.scss";
+// @import "./components/_section-slider.scss";
+// @import "./components/_slider-container.scss";
+// @import "./components/_slider.scss";
+// @import "./components/_slider-control.scss";
+// @import "./components/_team.scss";
+// @import "./components/_modal.scss";
+// @import "./components/_products-menu-section.scss";
+// @import "./components/_products-menu.scss";
+// @import "./components/_section-map.scss";
+// @import "./components/_footer-inner.scss";
+// @import "./components/_container-headline.scss";
+// @import "./components/_container-team.scss";
+// @import "./components/_container-reviews.scss";
+// @import "./components/_container-player.scss";
+// @import "./components/_player-decor.scss";
+// @import "./components/_player.scss";
+// @import "./components/_container-map.scss";
