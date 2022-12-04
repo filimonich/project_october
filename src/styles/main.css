@@ -1083,6 +1083,9 @@ how to remove the virtical space around the range input in IE*/
   display: block;
   position: relative;
 }
+.fixed-menu__link:hover {
+  border-color: #E01F3D;
+}
 .fixed-menu__link::before {
   content: "";
   display: block;
