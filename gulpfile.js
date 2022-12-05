@@ -30,15 +30,10 @@ task('copy:html', () => {
     .pipe(reload({ stream: true }));
 });
 
-const image = [
-  `${SRC_PATH}/image/*.png`,
-  `${SRC_PATH}/image/*.jpg`,
-  `${SRC_PATH}/image/*.svg`
-];
-
 task('copy:image', () => {
-  return src(`${SRC_PATH}/image/**/*`)
-  .pipe(dest(`${DIST_PATH}/images`));
+  return src(`${SRC_PATH}/image/pics/**/*`)
+  .pipe(dest(`${DIST_PATH}/image/pics`))
+  .pipe(reload({ stream: true }));
 });
 
 task('copy:video', () => {
@@ -47,17 +42,33 @@ task('copy:video', () => {
     .pipe(reload({ stream: true }));
 });
 
-task("styles", () => {
-  return src([...STYLE_LIBS, "src/styles/main.scss"])
+task ("copy:fancy", ()=> {
+  return src([`${SRC_PATH}/libs/fancybox-master/dist/jquery.fancybox.min.css`, `${SRC_PATH}/libs/fancybox-master/dist/jquery.fancybox.min.js`])
+  .pipe(dest(`${DIST_PATH}/libs/fancybox`))
+  .pipe(reload({stream: true}));
+});
+
+task ('sass', ()=> {
+  return src([`${SRC_PATH}/styles/main.scss`])
+  .pipe(gulpif(env == "dev", sourcemaps.init()))
+  .pipe(concat('main.min.scss'))
+  .pipe(sassGlob())
+  .pipe(sass().on('error', sass.logError))
+  .pipe(dest(DIST_PATH))
+  .pipe(reload({stream: true}));
+});
+
+task('styles', () => {
+  return src([...STYLE_LIBS, 'src/styles/main.scss'])
     .pipe(gulpif(env === 'dev', sourcemaps.init()))
-    .pipe(concat("main.min.scss"))
+    .pipe(concat('main.min.scss'))
     .pipe(sassGlob())
-    .pipe(sass().on("error", sass.logError))
+    .pipe(sass().on('error', sass.logError))
     .pipe(gulpif(env === 'prod', autoprefixer({
       overrideBrowserslist: [
-        "last 2 version",
-        "> 5%",
-        "not dead"
+        'last 2 version',
+        '> 5%',
+        'not dead'
       ],
       cascade: false
     })))
@@ -69,13 +80,8 @@ task("styles", () => {
     .pipe(reload({ stream: true }));
 });
 
-// const libs = [
-//   'node_modules/jquery/dist/jquery.js',
-//   'src/scripts/*.js'
-// ];
-
 task('scripts', () => {
-  return src([...JS_LIBS, 'src/scripts/*.js'])
+  return src([...JS_LIBS, 'src/js/*.js'])
     .pipe(gulpif(env === 'dev', sourcemaps.init()))
     .pipe(concat('main.min.js', { newLine: ';' }))
     .pipe(gulpif(env === 'prod', babel({
@@ -105,7 +111,7 @@ task('icons', () => {
         }
       }
     }))
-    .pipe(dest(`${DIST_PATH}/images/sprite`));
+    .pipe(dest(`${DIST_PATH}/image/sprite`));
 });
 
 task('server', () => {
@@ -118,16 +124,16 @@ task('server', () => {
 });
 
 task('watch', () => {
-  watch('./src/styles/**/*.scss', series('styles'));
+  watch('./src/styles/**/*.scss', series('sass','styles'));
   watch('./src/*.html', series('copy:html'));
   watch('./src/js/*.js', series('scripts'));
-  watch('./src/images/sprite/*.svg', series('icons'));
+  watch('./src/image/sprite/*.svg', series('icons'));
 });
 
 task('default',
   series(
-    'clean',
-    parallel('copy:html', 'styles', 'scripts', 'icons', "copy:image", "copy:video"),
+    'clean', 'sass',
+    parallel('copy:html', 'styles', 'scripts', 'copy:fancy', 'icons', "copy:image", "copy:video"),
     parallel('watch', 'server')
   )
 );
@@ -135,5 +141,5 @@ task('default',
 task('build',
   series(
     'clean',
-    parallel('copy:html', 'styles', 'scripts', 'icons', "copy:image", "copy:video"))
+    parallel('copy:html', 'styles', 'scripts', 'copy:fancy', 'icons', "copy:image", "copy:video"))
 );

@@ -87,6 +87,22 @@ $z-fixed-menu: 100;
 
 // @import "./media/_media.scss";
 
+@function rem($px) {
+  @return $px / $baseFontSize+0rem;
+}
+
+@mixin tablets {
+  @media screen and (max-width: $tablets) {
+    @content;
+  }
+}
+
+@mixin phones {
+  @media screen and (max-width: $phones) {
+    @content;
+  }
+}
+
 //setup
 
 @import url("https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap");
@@ -95,7 +111,7 @@ $z-fixed-menu: 100;
 
 // components
 
-@import "./media/*";
+@import "./components/*";
 @import "./layout/*";
 @import "./components/*";
 
