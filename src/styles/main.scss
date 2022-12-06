@@ -9,59 +9,58 @@ $phones: 480px;
 //mixin
 
 @mixin h1 {
-  font-size: rem(48px);
+  font-size: 3rem;
   font-weight: bold;
-  // line-height: rem(52px);
   line-height: 1.2;
   text-transform: uppercase;
 }
 
 @mixin h2 {
-  font-size: rem(48px);
+  font-size: 3rem;
   font-weight: bold;
-  line-height: rem(52px);
+  line-height: 3.25rem;
 }
 
 @mixin h3 {
-  font-size: rem(24px);
+  font-size: 1.5rem;
   font-weight: bold;
-  line-height: rem(28px);
+  line-height: 1.75rem;
 }
 
 @mixin Body2Bold {
   font-size: $baseFontSize;
   font-weight: bold;
-  line-height: rem(22px);
+  line-height: 1.375rem;
 }
 
 @mixin Body2Semibold {
   font-size: $baseFontSize;
   font-weight: 400;
-  line-height: rem(24px);
+  line-height: 1.5rem;
 }
 
 @mixin Body2Regular {
-  font-size: rem(16px);
+  font-size: 1rem;
   font-weight: 400;
-  line-height: rem(19px);
+  line-height: 1.188rem;
 }
 
 @mixin Body1Semibold {
-  font-size: rem(16px);
+  font-size: 1rem;
   font-weight: 400;
-  line-height: rem(24px);
+  line-height: 1.5rem;
 }
 
 @mixin Body1Regular {
-  font-size: rem(16px);
+  font-size: 1rem;
   font-weight: 400;
-  line-height: rem(24px);
+  line-height: 1.5rem;
 }
 
 @mixin BodyLight {
-  font-size: rem(16px);
+  font-size: 1rem;
   font-weight: 400;
-  line-height: rem(18px);
+  line-height: 1.125rem;
   font-style: normal;
   color: rgba(102, 102, 102, 1);
 }

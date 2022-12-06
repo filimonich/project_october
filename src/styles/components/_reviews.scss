@@ -1,18 +1,17 @@
 .reviews {
 
   &__display {
-    margin-bottom: rem(15px);
+    margin-bottom: 0.938rem ;
 
     @include tablets {
-      margin-bottom: rem(32px);
+      margin-bottom: 2rem ;
     }
-
   }
 
   &__list {
     position: relative;
-    padding: rem(42px);
-    min-height: rem(348px);
+    padding: 2.625rem ;
+    min-height: 21.75rem ;
     background-color: $white-r;
     overflow: hidden;
 
@@ -30,7 +29,7 @@
     }
 
     @include phones {
-      padding: rem(56px) rem(30px) rem(30px);
+      padding: 3.5rem  1.875rem  1.875rem ;
     }
   }
 
@@ -39,10 +38,10 @@
     display: flex;
     pointer-events: none;
     opacity: 0;
-    top: rem(42px);
+    top: 2.625rem ;
     right: 0;
     bottom: 0;
-    left: rem(42px);
+    left: 2.625rem;
 
     @include tablets {
       flex-direction: column;
@@ -58,14 +57,13 @@
   }
 
   &__avatar {
-    width: rem(254px);
-    height: rem(264px);
+    width: 15.875rem ;
+    height: 16.5rem ;
 
     @include tablets {
-      width: rem(130px);
-      height: rem(130px);
-      margin-bottom: rem(32px);
-
+      width: 8.125rem ;
+      height: 8.125rem ;
+      margin-bottom: 2rem ;
     }
   }
 
@@ -77,11 +75,10 @@
 
   &__content {
     flex: 1;
-    margin-left: rem(40px);
+    margin-left: 2.5rem ;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
     
     @include tablets {
       margin-left: 0;
@@ -92,32 +89,29 @@
       margin-left: 0;
       align-items: center;
     }
-
   }
 
   &__title {
     @include h3;
-    margin-bottom: rem(14px);
+    margin-bottom: 0.875rem ;
 
     @include phones {
-      font-size: rem(27px);
-      padding: 0 rem(100px);
+      font-size: 1.688rem ;
+      padding: 0 6.25rem ;
     }
   }
 
   &__text {
     @include Body1Semibold;
     color: $grey;
-    width: rem(460px);
-    margin-bottom: rem(26px);
+    width: 28.75rem ;
+    margin-bottom: 1.625rem ;
 
     @include tablets {
-      // white-space: normal;
       width: 99%;
     }
     
     @include phones {
-      // white-space: normal;
       width: 99%;
     }
 
@@ -140,14 +134,14 @@
 
   &__switcher-item {
     box-sizing: border-box;
-    width: rem(74px);
-    height: rem(74px);
-    border: rem(4px) solid transparent;
+    width: 4.625rem ;
+    height: 4.625rem ;
+    border: 0.25rem  solid transparent;
     border-radius: 50%;
     overflow: hidden;
     position: relative;
     cursor: pointer;
-    margin-right: rem(2px);
+    margin-right: 0.125rem ;
 
     &--active,
     &:hover {

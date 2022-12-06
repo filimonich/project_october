@@ -1,16 +1,15 @@
 .socials {
   cursor: pointer;
 
-
   &__item {
     display: inline-block;
     vertical-align: middle;
-    margin-right: rem(10px);
+    margin-right: 0.625rem;
   }
 
   &__link {
-    width: rem(20px);
-    height: rem(20px);
+    width: 1.25rem;
+    height: 1.25rem;
     fill: $grey;
 
     &:hover {

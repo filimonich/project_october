@@ -1,5 +1,5 @@
 .menu {
-  padding-top: rem(4px);
+  padding-top: 0.25rem;
 
   @include tablets {
     display: none;
@@ -13,10 +13,9 @@
   }
 
   &__item {
-    margin-right: rem(27px);
-    margin-bottom: rem(10px);
+    margin-right: 1.688rem;
+    margin-bottom: 0.625rem;
     font-family: 'Alegreya Sans';
-    // letter-spacing: 0px;
     letter-spacing: 0;
 
     &:last-child {
@@ -25,8 +24,8 @@
   }
 
   &__link {
-    font-size: rem(18px);
-    line-height: rem(30px);
+    font-size: 1.125rem;
+    line-height: 1.875rem;
     color: $black;
     text-decoration: none;
     white-space: nowrap;
@@ -36,7 +35,6 @@
       color: $red;
     }
   }
-
 }
 
 .menu--768 {
@@ -59,11 +57,11 @@
 
 .menu--768 .menu__item {
   margin-right: 0;
-  margin-bottom: rem(5px);
+  margin-bottom: 0.313rem;
 }
 
 .menu--768 .menu__link {
-  font-size: rem(36px);
-  line-height: rem(72px);
+  font-size: 2.25rem;
+  line-height: 4.5rem;
   color: $white;
 }

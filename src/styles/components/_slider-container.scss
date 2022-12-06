@@ -1,6 +1,5 @@
 .slider-container {
   display: flex;
-  // justify-content: space-between;
   align-items: center;
   position: relative;
   justify-content: center;
@@ -16,8 +15,8 @@
     display: block;
     position: absolute;
     background: #000;
-    height: rem(31px);
-    width: rem(31px);
+    height: 1.938rem;
+    width: 1.938rem;
     right: 1%;
     top: 99.5%;
     transform: rotate(29deg);

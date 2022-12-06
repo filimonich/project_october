@@ -1,8 +1,6 @@
 .slider {
-  // padding: 0 rem(64px) rem(26px);
 
   @include tablets {
-    // padding: rem(50px);
     padding: 0;
   }
 
@@ -14,7 +12,6 @@
     align-items: center;
     justify-content: space-between;
 
-
     @include tablets {
       flex-direction: column;
       align-items: center;
@@ -25,28 +22,25 @@
   &__img {
     width: 48%;
     margin-left: 5%;
-    // margin: 5% 5% 0;
 
     @include tablets {
-      width: rem(306px);
-      height: rem(306px);
+      width: 19.125rem;
+      height: 19.125rem;
       margin: 0;
       margin-bottom: 3%;
     }
 
     @include phones {
-      width: rem(306px);
-      height: rem(306px);
+      width: 19.125rem;
+      height: 19.125rem;
       margin-right: 0;
       margin-bottom: 5%;
     }
-
   }
 
   &__items {
     width: 44%;
-    // flex: 1;
-    
+
     @include tablets {
       width: 84%;
       display: flex;
@@ -60,8 +54,8 @@
   }
 
   &__dropdown {
-    width: rem(90px);
-    height: rem(90px);
+    width: 5.625rem;
+    height: 5.625rem;
     cursor: pointer;
     background-color: $grey-parameters;
     display: flex;
@@ -69,9 +63,8 @@
     justify-content: center;
     align-items: center;
     border-radius: 5%;
-    margin-bottom: rem(52px);
+    margin-bottom: 3.25rem;
     position: relative;
-
 
     &:hover .slider__description {
       max-height: 100vh;
@@ -80,18 +73,17 @@
     @include tablets {
       display: none;
     }
-
   }
 
   &__parameters-icon {
     fill: $white;
-    width: rem(42px);
-    height: rem(42px);
+    width: 2.625rem;
+    height: 2.625rem;
 
   }
 
   &__benefits {
-    width: rem(374px);
+    width: 23.375rem;
     height: auto;
 
     @include tablets {
@@ -100,13 +92,12 @@
       justify-content: center;
       align-items: center;
     }
-
   }
 
   &__benefits-text {
     @include Body2Regular;
     color: $grey;
-    margin-bottom: rem(24px);
+    margin-bottom: 1.5rem;
 
     @include tablets {
       width: 140%;
@@ -121,11 +112,11 @@
 
   &__title {
     text-align: left;
-    font-size: rem(36px);
-    margin-bottom: rem(24px);
+    font-size: 2.25rem;
+    margin-bottom: 1.5rem;
 
     @include tablets {
-      font-size: rem(30px);
+      font-size: 1.875rem;
       text-align: center;
       margin: 0;
     }
@@ -135,10 +126,10 @@
     display: flex;
     text-align: left;
     width: auto;
-    height: (60px);
+    height: 3.75rem;
     align-items: center;
-    margin-bottom: rem(24px);
-    
+    margin-bottom: 1.5rem;
+
     @include tablets {
       justify-content: space-between;
       width: 66%;
@@ -156,21 +147,19 @@
     display: flex;
     text-align: left;
     width: auto;
-    height: (60px);
+    height: 3.75rem;
     align-items: center;
-    margin-bottom: rem(24px);
+    margin-bottom: 1.5rem;
     justify-content: space-between;
   }
 
   &__option {
-    margin-right: rem(110px);
+    margin-right: 6.875rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
 
     @include tablets {
-      // margin-right: rem(2px);
-      // margin-left: rem(44px);
       margin: 0;
     }
 
@@ -180,13 +169,12 @@
   }
 
   &__price {
-    font-size: rem(36px);
-    margin-right: rem(30px);
+    font-size: 2.25rem;
+    margin-right: 1.875rem;
 
     @include tablets {
-      margin-left: rem(10px);
+      margin-left: 0.625rem;
     }
-
   }
 
   &__option-size {
@@ -201,49 +189,46 @@
   &__description {
     position: absolute;
     background: rgba(255, 255, 255, 0.8);
-    box-shadow: 4px 4px 40px rgba(0, 0, 0, 0.06);
-    backdrop-filter: blur(20px);
+    box-shadow: 0.25rem 0.25rem 2.5rem rgba(0, 0, 0, 0.06);
+    backdrop-filter: blur 1.25rem;
     top: 0;
     left: 100%;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.5s;
-
   }
 
   &__dropdown-list {
     color: $black;
     display: flex;
     flex-direction: column;
-    padding: rem(18px) rem(10px);
+    padding: 1.125rem 0.625rem;
   }
 
   &__dropdown-item {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    width: rem(246px);
-    height: rem(44px);
-
+    width: 15.375rem;
+    height: 2.75rem;
   }
 
   &__dropdown-icon {
-    width: rem(32px);
-    height: rem(32px);
-    margin-left: rem(15px);
-    margin-right: rem(12px);
+    width: 2rem;
+    height: 2rem;
+    margin-left: 0.938rem;
+    margin-right: 0.75rem;
     fill: #000000;
   }
 
   &__dropdown-text {
     @include Body1Semibold;
-    font-size: rem(16px);
+    font-size: 1rem;
   }
 
   &__dropdown-benefits {
     @include Body1Semibold;
     margin-left: auto;
-    margin-right: rem(15px);
+    margin-right: 0.938rem;
   }
-
 }

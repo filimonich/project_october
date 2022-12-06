@@ -8,8 +8,8 @@
 
   &__image-wrapper {
     display: inline-block;
-    width: rem(128px);
-    height: rem(128px);
+    width: 8rem;
+    height: 8rem;
     position: relative;
     background: #F2F5F4;
     border-radius: 50%;
@@ -17,8 +17,8 @@
   }
 
   &__icon {
-    width: rem(68px);
-    height: rem(68px);
+    width: 4.25rem;
+    height: 4.25rem;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -26,13 +26,13 @@
   }
 
   &__image {
-    font-size: rem(27px);
+    font-size: 1.688rem;
     font-weight: bold;
-    margin-bottom: rem(10px);
+    margin-bottom: 0.625rem;
 
     @include phones {
       margin-bottom: 0;
-      margin-right: rem(12px);
+      margin-right: 0.75rem;
     }
   }
 
@@ -40,7 +40,7 @@
     @include h3;
 
     @include phones {
-      margin-bottom: rem(10px);
+      margin-bottom: 0.625rem;
     }
   }
 

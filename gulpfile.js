@@ -32,30 +32,30 @@ task('copy:html', () => {
 
 task('copy:image', () => {
   return src(`${SRC_PATH}/image/pics/**/*`)
-  .pipe(dest(`${DIST_PATH}/image/pics`))
-  .pipe(reload({ stream: true }));
+    .pipe(dest(`${DIST_PATH}/image/pics`))
+    .pipe(reload({ stream: true }));
 });
 
 task('copy:video', () => {
-  return src(`${SRC_PATH}/video/*.mp4`)
+  return src(`${SRC_PATH}/video/*.mp4`,)
     .pipe(dest(`${DIST_PATH}/video`))
     .pipe(reload({ stream: true }));
 });
 
-task ("copy:fancy", ()=> {
+task("copy:fancy", () => {
   return src([`${SRC_PATH}/libs/fancybox-master/dist/jquery.fancybox.min.css`, `${SRC_PATH}/libs/fancybox-master/dist/jquery.fancybox.min.js`])
-  .pipe(dest(`${DIST_PATH}/libs/fancybox`))
-  .pipe(reload({stream: true}));
+    .pipe(dest(`${DIST_PATH}/libs/fancybox`))
+    .pipe(reload({ stream: true }));
 });
 
-task ('sass', ()=> {
+task('sass', () => {
   return src([`${SRC_PATH}/styles/main.scss`])
-  .pipe(gulpif(env == "dev", sourcemaps.init()))
-  .pipe(concat('main.min.scss'))
-  .pipe(sassGlob())
-  .pipe(sass().on('error', sass.logError))
-  .pipe(dest(DIST_PATH))
-  .pipe(reload({stream: true}));
+    .pipe(gulpif(env == "dev", sourcemaps.init()))
+    .pipe(concat('main.min.scss'))
+    .pipe(sassGlob())
+    .pipe(sass().on('error', sass.logError))
+    .pipe(dest(DIST_PATH))
+    .pipe(reload({ stream: true }));
 });
 
 task('styles', () => {
@@ -85,7 +85,7 @@ task('scripts', () => {
     .pipe(gulpif(env === 'dev', sourcemaps.init()))
     .pipe(concat('main.min.js', { newLine: ';' }))
     .pipe(gulpif(env === 'prod', babel({
-      presets: ['@babel/env']
+      presets: [['@babel/env'], { compact: false }]
     })))
     .pipe(gulpif(env === 'prod', uglify()))
     .pipe(gulpif(env === 'dev', sourcemaps.write()))
@@ -124,7 +124,7 @@ task('server', () => {
 });
 
 task('watch', () => {
-  watch('./src/styles/**/*.scss', series('sass','styles'));
+  watch('./src/styles/**/*.scss', series('sass', 'styles'));
   watch('./src/*.html', series('copy:html'));
   watch('./src/js/*.js', series('scripts'));
   watch('./src/image/sprite/*.svg', series('icons'));

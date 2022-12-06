@@ -1,8 +1,7 @@
 .hero {
   background: $white-background;
-  // background-size: cover;
   height: 100%;
-  min-height: rem(652px);
+  min-height: 40.75rem;
 
   @include tablets {
     position: relative;
@@ -14,25 +13,20 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: rem(24px) 0 rem(65px);
+    padding: 1.5rem 0 4.063rem;
     background: url(./../../src/image/main/BeatsSolo3.png) right center/50% auto no-repeat;
 
     @include tablets {
-      // background-size: 44% auto;
-      // background-position: 50% 26%;
       background: url(./../../src/image/main/BeatsSolo3-768.png) 50% 26% no-repeat;
     }
-    
-    // @include phones {
-    // }
 
     &::after {
       content: "";
       display: block;
       position: absolute;
       background: #999999;
-      height: rem(10px);
-      width: rem(46px);
+      height: 0.625rem;
+      width: 2.875rem;
       right: 0.5%;
       top: 99.5%;
       transform: rotate(-45deg);
@@ -54,7 +48,6 @@
     @include phones {
       margin-bottom: 0;
     }
-
   }
 
   &__icon-section {
@@ -66,38 +59,38 @@
   &__main-title {
     @include h1;
     color: $black;
-    margin-bottom: rem(15px);
+    margin-bottom: 0.938rem;
     text-transform: uppercase;
-    max-width: rem(400px);
-    text-shadow: 0 rem(4px) rem(4px) #cacaca;
+    max-width: 25rem;
+    text-shadow: 0 0.25rem 0.25rem #cacaca;
 
     @include tablets {
-      max-width: rem(665px);
+      max-width: 41.563rem;
     }
 
     @include phones {
-      font-size: rem(32px);
-      line-height: rem(36px);
+      font-size: 2rem;
+      line-height: 2.25rem;
       padding: 0% 15%;
     }
   }
 
   &__title-text {
     @include Body1Semibold;
-    font-size: rem(21px);
-    margin-bottom: rem(39px);
-    font-size: rem(21px);
-    line-height: rem(25px);
-    max-width: rem(382px);
+    font-size: 1.313rem;
+    margin-bottom: 2.438rem;
+    font-size: 1.313rem;
+    line-height: 1.563rem;
+    max-width: 23.875rem;
 
     @include tablets {
-      max-width: rem(451px);
+      max-width: 28.188rem;
       padding: 0;
     }
 
     @include phones {
       padding: 0 14%;
-      font-size: rem(18px);
+      font-size: 1.125rem;
     }
   }
 
@@ -105,5 +98,4 @@
     height: 100%;
     width: 100%;
   }
-
 }

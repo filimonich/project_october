@@ -3,15 +3,15 @@
   @include BodyLight;
 
   &__icon {
-    width: rem(41px);
-    height: rem(41px); 
-    margin-right: rem(7px);
+    width: 2.563rem;
+    height: 2.563rem; 
+    margin-right: 0.438rem;
     fill: $black;
   }
 
   &__text {
     color: $black;
-    font-size: rem(16px);
-    max-width: rem(114px);
+    font-size: 1rem;
+    max-width: 7.125rem;
   }
 }

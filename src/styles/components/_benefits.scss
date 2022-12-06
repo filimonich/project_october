@@ -13,14 +13,14 @@
 
     @include phones {
       padding: 0;
-      margin-bottom: rem(18px);
+      margin-bottom: 1.125rem;
     }
 
     &:before {
       content: url("./../../src/image/section/combined-shape.png");
       position: absolute;
       top: 16%;
-      right: rem(5px);
+      right: 0.313rem;
       transform: translate(50%);
 
       @include tablets {

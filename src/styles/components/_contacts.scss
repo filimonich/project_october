@@ -1,5 +1,5 @@
 .contacts {
-  
+
   &__tel {
     text-decoration: none;
     display: flex;
@@ -12,15 +12,14 @@
   }
 
   &__icon-elem {
-    width: rem(14px);
-    height: rem(14px);
-    margin-right: rem(8px);
-    margin-top: rem(8px);
+    width: 0.875rem;
+    height: 0.875rem;
+    margin-right: 0.5rem;
+    margin-top: 0.5rem;
   }
 
   &__text {
     font-style: normal;
-    font-size: rem(18px);
+    font-size: 1.125rem;
   }
-
 }

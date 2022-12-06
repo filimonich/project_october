@@ -9,23 +9,23 @@
   }
 
   &__content--active {
-    height: rem(50px);
+    height: 3.125rem;
 
     @include tablets {
-      height: rem(340px);
-      margin-bottom: rem(30px);
+      height: 21.25rem;
+      margin-bottom: 1.875rem;
     }
 
     @include phones {
-      margin-bottom: rem(30px);
+      margin-bottom: 1.875rem;
     }
   }
 
   &__item {
     text-align: center;
     align-items: center;
-    margin-right: rem(20px);
-    max-width: rem(454px);
+    margin-right: 1.25rem;
+    max-width: 28.375rem;
 
     @include tablets {
       flex: initial;
@@ -42,56 +42,56 @@
     }
   }
 
-  
+
   &__member {
-    margin-bottom: rem(22px);
-    
+    margin-bottom: 1.375rem;
+
     @include tablets {
-      padding-top: rem(15px);
+      padding-top: 0.938rem;
     }
-    
+
     @include phones {
-      max-width: rem(126px);
+      max-width: 7.875rem;
       left: 30%;
       position: relative;
       margin: 0;
     }
   }
 
-  
+
   &__title {
     color: $black;
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: rem(11px);
-    
+    margin-bottom: 0.688rem;
+
     @include tablets {
       margin-bottom: 0;
     }
-    
+
     @include phones {
       margin-bottom: 0;
     }
   }
-  
+
   &__name {
     @include Body2Bold;
-    font-size: rem(20px);
+    font-size: 1.25rem;
     cursor: pointer;
-    
+
     &::after {
       content: "";
       display: inline-block;
       vertical-align: middle;
-      margin-left: rem(3px);
+      margin-left: 0.188rem;
       width: 0;
       height: 0;
       border-style: solid;
-      border-width: rem(7px) rem(4.5px) 0px rem(4.5px);
+      border-width: 0.438rem 0.281rem 0 0.281rem;
       border-color: #e01f3c transparent transparent transparent;
       transition: transform .3s;
-    }    
+    }
   }
 
   &__item.team__content--active {
@@ -99,36 +99,36 @@
       transform: rotate(180deg);
     }
   }
-  
+
   &__content {
-    max-width: rem(222px);
+    max-width: 13.875rem;
     overflow: hidden;
     transition: height .3s;
     height: 0;
     position: absolute;
 
     @include tablets {
-      max-width: rem(228px);
+      max-width: 14.25rem;
       height: 0;
       position: relative;
     }
 
     @include tablets {
-      max-width: rem(316px);
+      max-width: 19.75rem;
     }
   }
 
   &__profession {
     @include Body2Regular;
     color: #000000;
-    margin-bottom: rem(4px);
+    margin-bottom: 0.25rem;
 
     @include tablets {
       @include Body2Bold;
     }
 
     @include phones {
-      margin-top: rem(8px);
+      margin-top: 0.5rem;
     }
   }
 
@@ -143,10 +143,6 @@
   }
 }
 
-// .team--version--desktop .team__content {
-//   margin-top: 1%;
-// }
-
 .team--version--mobile {
   display: none;
 
@@ -156,5 +152,5 @@
 }
 
 .team--version--mobile .team__item {
-  margin-bottom: rem(16px);
+  margin-bottom: 1rem;
 }

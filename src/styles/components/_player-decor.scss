@@ -6,20 +6,19 @@
 
   &__pentagon {
     position: relative;
-    width: 56px;
-    border-width: 29px 15px 0;
+    width: 3.5rem;
+    border-width: 1.813rem 0.938rem 0;
     border-style: solid;
     border-color: $red transparent;
 
     &:before {
-
       content: "";
       position: absolute;
       height: 0;
       width: 0;
-      top: -49px;
-      left: -15px;
-      border-width: 0 28px 21px;
+      top: -3.063rem;
+      left: -0.938rem;
+      border-width: 0 1.75rem 1.313rem;
       border-style: solid;
       border-color: transparent transparent $red;
     }
