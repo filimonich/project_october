@@ -1,17 +1,17 @@
 .reviews {
 
   &__display {
-    margin-bottom: 0.938rem ;
+    margin-bottom: 0.938rem;
 
     @include tablets {
-      margin-bottom: 2rem ;
+      margin-bottom: 2rem;
     }
   }
 
   &__list {
     position: relative;
-    padding: 2.625rem ;
-    min-height: 21.75rem ;
+    padding: 2.625rem;
+    min-height: 21.75rem;
     background-color: $white-r;
     overflow: hidden;
 
@@ -29,7 +29,7 @@
     }
 
     @include phones {
-      padding: 3.5rem  1.875rem  1.875rem ;
+      padding: 3.5rem 1.875rem 1.875rem;
     }
   }
 
@@ -38,7 +38,7 @@
     display: flex;
     pointer-events: none;
     opacity: 0;
-    top: 2.625rem ;
+    top: 2.625rem;
     right: 0;
     bottom: 0;
     left: 2.625rem;
@@ -57,13 +57,13 @@
   }
 
   &__avatar {
-    width: 15.875rem ;
-    height: 16.5rem ;
+    width: 15.875rem;
+    height: 16.5rem;
 
     @include tablets {
-      width: 8.125rem ;
-      height: 8.125rem ;
-      margin-bottom: 2rem ;
+      width: 8.125rem;
+      height: 8.125rem;
+      margin-bottom: 2rem;
     }
   }
 
@@ -75,11 +75,11 @@
 
   &__content {
     flex: 1;
-    margin-left: 2.5rem ;
+    margin-left: 2.5rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    
+
     @include tablets {
       margin-left: 0;
       align-items: center;
@@ -93,28 +93,27 @@
 
   &__title {
     @include h3;
-    margin-bottom: 0.875rem ;
+    margin-bottom: 0.875rem;
 
     @include phones {
-      font-size: 1.688rem ;
-      padding: 0 6.25rem ;
+      font-size: 1.688rem;
+      padding: 0 6.25rem;
     }
   }
 
   &__text {
     @include Body1Semibold;
     color: $grey;
-    width: 28.75rem ;
-    margin-bottom: 1.625rem ;
+    width: 28.75rem;
+    margin-bottom: 1.625rem;
 
     @include tablets {
       width: 99%;
     }
-    
+
     @include phones {
       width: 99%;
     }
-
   }
 
   &__author {
@@ -126,22 +125,21 @@
     align-items: center;
     justify-content: center;
 
-      @include tablets {
-        top: 98.6%;
-      }
+    @include tablets {
+      top: 98.6%;
     }
-
+  }
 
   &__switcher-item {
     box-sizing: border-box;
-    width: 4.625rem ;
-    height: 4.625rem ;
-    border: 0.25rem  solid transparent;
+    width: 4.625rem;
+    height: 4.625rem;
+    border: 0.25rem solid transparent;
     border-radius: 50%;
     overflow: hidden;
     position: relative;
     cursor: pointer;
-    margin-right: 0.125rem ;
+    margin-right: 0.125rem;
 
     &--active,
     &:hover {
