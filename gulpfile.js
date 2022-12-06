@@ -1,6 +1,6 @@
-const { src, dest, task, series, watch, parallel } = require("gulp");
+const { src, dest, task, series, watch, parallel } = require('gulp');
 const rm = require('gulp-rm');
-const sass = require('gulp-sass')(require('node-sass'));
+const sass = require('gulp-sass')(require('sass'));
 const concat = require('gulp-concat');
 const browserSync = require('browser-sync').create();
 const reload = browserSync.reload;

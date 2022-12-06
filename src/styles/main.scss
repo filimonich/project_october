@@ -88,7 +88,8 @@ $z-fixed-menu: 100;
 // @import "./media/_media.scss";
 
 @function rem($px) {
-  @return $px / $baseFontSize+0rem;
+  // @return calc($px / $baseFontSize + 0rem);
+  @return calc($px / $baseFontSize);
 }
 
 @mixin tablets {
@@ -103,6 +104,14 @@ $z-fixed-menu: 100;
   }
 }
 
+@function max($numbers...) {
+  @return m#{a}x(#{$numbers});
+}
+
+@function min($numbers...) {
+  @return m#{i}n(#{$numbers});
+}
+
 //setup
 
 @import url("https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap");
@@ -113,7 +122,7 @@ $z-fixed-menu: 100;
 
 @import "./components/*";
 @import "./layout/*";
-@import "./components/*";
+// @import "./media/*";
 
 // @import "./components/_container.scss";
 // @import "./components/_hero.scss";
