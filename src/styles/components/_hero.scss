@@ -14,10 +14,10 @@
     flex-direction: column;
     justify-content: space-between;
     padding: 1.5rem 0 4.063rem;
-    background: url(./../../src/image/main/BeatsSolo3.png) right center/50% auto no-repeat;
+    background: url(./../../../image/pics/main/BeatsSolo3.png) right center/50% auto no-repeat;
 
     @include tablets {
-      background: url(./../../src/image/main/BeatsSolo3-768.png) 50% 26% no-repeat;
+      background: url(./../../../image/pics/main/BeatsSolo3-768.png) 50% 26% no-repeat;
     }
 
     &::after {

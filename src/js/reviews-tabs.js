@@ -3,6 +3,7 @@ const findBlockByAlias = alias => {
     return $(item).attr("data-linked-with") == alias;
   })
 };
+
 $(".reviews__switcher-link").click((e) => {
   e.preventDefault();
 
@@ -13,4 +14,4 @@ $(".reviews__switcher-link").click((e) => {
 
   itemToShow.addClass("reviews__item--active").siblings().removeClass("reviews__item--active");
   curItem.addClass("reviews__item--active").siblings().removeClass("reviews__item--active");
-})
+});

@@ -1,5 +1,5 @@
 .products-menu-section {
-  background: url("./../../../src/image/products-menu/accordeon-background.png") no-repeat;
+  background: url("./../../../../image/pics/products-menu/accordeon-background.png") no-repeat;
   position: relative;
   background-size: cover;
   color: $white;
@@ -8,7 +8,7 @@
   z-index: 3;
 
   @include tablets {
-    background: url("./../../../src/image/products-menu/accordeon-background-768.png") top right 16% no-repeat;
+    background: url("./../../../../image/pics/products-menu/accordeon-background-768.png") top right 16% no-repeat;
     background-size: cover;
   }
   

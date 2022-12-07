@@ -38,7 +38,7 @@ $('.form').submit((e) => {
         comment: comment.val(),
         to: to.val(),
       },
-      error: data => {}
+      error: data => { }
     });
 
     request.done((data) => {
@@ -50,11 +50,11 @@ $('.form').submit((e) => {
       content.text(message);
       modal.addClass("error-modal");
     });
-    
+
     request.always(() => {
       $.fancybox.open({
         src: "#modal",
-        type: "inline" 
+        type: "inline"
       });
     })
   }
@@ -65,7 +65,3 @@ $(".app-submit-modal").click(e => {
 
   $.fancybox.close();
 });
-//   // debugger;
-
-
-

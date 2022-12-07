@@ -7,8 +7,9 @@ module.exports = {
   ],
   JS_LIBS: [
     "node_modules/jquery/dist/jquery.js",
+    "src/libs/bxslider/dist/jquery.bxslider.min.js",
+    "src/libs/fancybox-master/dist/jquery.fancybox.min.js",
     "node_modules/mobile-detect/mobile-detect.js",
     "node_modules/jquery-touchswipe/jquery.touchSwipe.js",
-    "src/libs/fancybox-master/dist/jquery.fancybox.min.js",
   ]
 }

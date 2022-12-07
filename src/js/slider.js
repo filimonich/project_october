@@ -11,4 +11,4 @@ $('.slider-control__icon--direction--prev').click(e => {
 $('.slider-control__icon--direction--next').click(e => {
   e.preventDefault();
   slider.goToNextSlide();
-})
+});

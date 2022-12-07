@@ -1,5 +1,5 @@
 .menu {
-  padding-top: 0.25rem;
+  padding-top: 0.55rem;
 
   @include tablets {
     display: none;
@@ -25,7 +25,7 @@
 
   &__link {
     font-size: 1.125rem;
-    line-height: 1.875rem;
+    line-height: 1.25rem;
     color: $black;
     text-decoration: none;
     white-space: nowrap;
