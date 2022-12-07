@@ -67,7 +67,8 @@
     position: relative;
 
     &:hover .slider__description {
-      max-height: 100vh;
+      // max-height: 100vh;
+      max-height: 100%;
     }
 
     @include tablets {
@@ -79,11 +80,10 @@
     fill: $white;
     width: 2.625rem;
     height: 2.625rem;
-
   }
 
   &__benefits {
-    width: 23.375rem;
+    max-width: 23.375rem;
     height: auto;
 
     @include tablets {
@@ -170,9 +170,9 @@
 
   &__price {
     font-size: 2.25rem;
-    margin-right: 1.875rem;
-
+    
     @include tablets {
+      margin-right: 1.875rem;
       margin-left: 0.625rem;
     }
   }

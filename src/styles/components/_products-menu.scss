@@ -18,12 +18,12 @@
 
   &__title {
     display: flex;
-    width: 6.375rem ;
+    width: 6.375rem;
     justify-content: center;
     align-items: flex-end;
 
     @include phones {
-      width: 5.625rem ;
+      width: 5.625rem;
     }
   }
 
@@ -38,10 +38,10 @@
 
   &__content {
     background: rgba(51, 53, 55, 0.9);
-    width: 0;
+    max-width: 0;
     position: relative;
     overflow: hidden;
-    transition: width .7s;
+    transition: max-width .7s;
     z-index: -1;
   }
 
@@ -49,7 +49,7 @@
     padding: 1.875rem 5rem 2.75rem 2.375rem;
     @include Body1Semibold;
     overflow-y: auto;
-    min-width: 39rem ;
+    min-width: 39rem;
 
     @include tablets {
       min-width: calc(100vw - 30rem);
@@ -63,7 +63,7 @@
 }
 
 .products-active>.products-menu__content {
-  width: 39rem ;
+  max-width: 27.125rem;
 
   @include tablets {
     width: calc(100vw - 16.9rem);

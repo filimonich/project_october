@@ -14,6 +14,7 @@
     position: absolute;
     left: -2%;
     top: 51%;
+    z-index: 1;
 
     @include tablets {
       top: 30%;
