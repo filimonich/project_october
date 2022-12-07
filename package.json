@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "gulp": "cross-env NODE_ENV=dev gulp",
-    "build": "cross-env NODE_ENV=prod gulp build"
+    "build": "cross-env NODE_ENV=prod gulp build",
+    "deploy": "gulp build && gh-pages -d build"
   },
   "repository": {
     "type": "git",
@@ -17,7 +18,7 @@
   "bugs": {
     "url": "https://github.com/filimonich/project_october/issues"
   },
-  "homepage": "https://github.com/filimonich/project_october#readme",
+  "homepage": "https://filimonich.github.io/project_october",
   "dependencies": {
     "@fancyapps/fancybox": "^3.5.7",
     "bxslider": "^4.2.14",
@@ -37,6 +38,7 @@
     "gulp-babel": "^8.0.0",
     "gulp-clean-css": "^4.3.0",
     "gulp-concat": "^2.6.1",
+    "gulp-gh-pages": "^0.5.4",
     "gulp-group-css-media-queries": "^1.2.2",
     "gulp-if": "^3.0.0",
     "gulp-rm": "^2.0.0",
