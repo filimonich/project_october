@@ -141,5 +141,5 @@ task('default',
 task('build',
   series(
     'clean',
-    parallel('copy:html', 'styles', 'scripts', 'copy:fancy', 'icons', "copy:image", "copy:video"))
+    parallel('copy:html', 'styles', 'scripts', 'copy:fancy', 'icons', "copy:image", "copy:video",))
 );

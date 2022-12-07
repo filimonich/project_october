@@ -6,7 +6,7 @@
   "scripts": {
     "gulp": "cross-env NODE_ENV=dev gulp",
     "build": "cross-env NODE_ENV=prod gulp build",
-    "deploy": "gulp build && gh-pages -d build"
+    "deploy": "gh-pages -d dist"
   },
   "repository": {
     "type": "git",
