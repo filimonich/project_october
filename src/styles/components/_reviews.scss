@@ -1,4 +1,7 @@
 .reviews {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
   &__display {
     margin-bottom: 0.938rem;
@@ -9,6 +12,7 @@
   }
 
   &__list {
+    display: flex;
     position: relative;
     padding: 2.625rem;
     min-height: 21.75rem;
@@ -104,7 +108,7 @@
   &__text {
     @include Body1Semibold;
     color: $grey;
-    width: 28.75rem;
+    max-width: 28.75rem;
     margin-bottom: 1.625rem;
 
     @include tablets {
