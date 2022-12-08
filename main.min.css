@@ -2240,7 +2240,7 @@ li.products-menu__item.products-active {
   border-radius: 0.25rem;
 }
 .radio--checkbox .radio__visible::before {
-  background: url("./../../../src/image/form/checkmark.svg") center center no-repeat;
+  background: url("./image/pics/form/checkmark.svg") center center no-repeat;
 }
 @media screen and (max-width: 30rem) {
   .radio--checkbox {
