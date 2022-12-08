@@ -1281,7 +1281,7 @@ body.compensate-for-scrollbar {
   }
 }
 .benefits__item:before {
-  content: url("./../../src/image/section/combined-shape.png");
+  content: url("./image/pics/section/combined-shape.png");
   position: absolute;
   top: 16%;
   right: 0.313rem;
@@ -1769,11 +1769,11 @@ body.compensate-for-scrollbar {
   flex-direction: column;
   justify-content: space-between;
   padding: 1.5rem 0 4.063rem;
-  background: url(./../../../image/pics/main/BeatsSolo3.png) right center/50% auto no-repeat;
+  background: url(./image/pics/main/BeatsSolo3.png) right center/50% auto no-repeat;
 }
 @media screen and (max-width: 48rem) {
   .hero__container {
-    background: url(./../../../image/pics/main/BeatsSolo3-768.png) 50% 26% no-repeat;
+    background: url(./image/pics/main/BeatsSolo3-768.png) 50% 26% no-repeat;
   }
 }
 .hero__container::after {
@@ -2096,7 +2096,7 @@ body.compensate-for-scrollbar {
 }
 
 .products-menu-section {
-  background: url("./../../../../image/pics/products-menu/accordeon-background.png") no-repeat;
+  background: url("./image/pics/products-menu/accordeon-background.png") no-repeat;
   position: relative;
   background-size: cover;
   color: #FFFFFF;
@@ -2106,7 +2106,7 @@ body.compensate-for-scrollbar {
 }
 @media screen and (max-width: 48rem) {
   .products-menu-section {
-    background: url("./../../../../image/pics/products-menu/accordeon-background-768.png") top right 16% no-repeat;
+    background: url("./image/pics/products-menu/accordeon-background-768.png") top right 16% no-repeat;
     background-size: cover;
   }
 }
@@ -2186,7 +2186,7 @@ body.compensate-for-scrollbar {
   font-weight: 400;
   line-height: 1.5rem;
   overflow-y: auto;
-  min-width: 39rem;
+  min-width: 30rem;
 }
 @media screen and (max-width: 48rem) {
   .products-menu__container {
@@ -2453,7 +2453,7 @@ li.products-menu__item.products-active {
 }
 
 .section-form {
-  background: url("./../../../../image/pics/form/formbg.png") center bottom no-repeat;
+  background: url("./image/pics/form/formbg.png") center bottom no-repeat;
   background-size: cover;
   background-color: #181818;
 }
@@ -2816,12 +2816,12 @@ li.products-menu__item.products-active {
   vertical-align: middle;
   margin-right: 0.625rem;
 }
-.socials__link {
+.socials__icon {
   width: 1.25rem;
   height: 1.25rem;
   fill: #666666;
 }
-.socials__link:hover {
+.socials__icon:hover {
   fill: #292929;
 }
 
@@ -3083,6 +3083,7 @@ footer {
 img {
   display: block;
   max-width: 100%;
+  margin: auto;
 }
 
 button {
