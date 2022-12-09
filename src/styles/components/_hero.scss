@@ -1,7 +1,7 @@
 .hero {
   background: $white-background;
   height: 100%;
-  min-height: 40.75rem;
+  min-height: 100%;
 
   @include tablets {
     position: relative;
