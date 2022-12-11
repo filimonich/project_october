@@ -11,11 +11,13 @@
 + SVG
 + Flexbox
 
-<p align='center'>
+![alt text](https://disk.yandex.ru/i/sq6KTu90Lr50uw)
+
+<!-- <p align='center'>
   <img src='https://disk.yandex.ru/i/sq6KTu90Lr50uw' width='64%'>
   <img src='https://disk.yandex.ru/i/QswtB9KMXVsKGA' width='33%'>
   <img src='https://disk.yandex.ru/i/M_W-rhAR08p1Tg' width='43%'>
-</p>
+</p> -->
 
 [**Демо**](https://filimonich.github.io/project_october)
 
