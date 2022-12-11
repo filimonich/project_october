@@ -12,17 +12,10 @@
 + Flexbox
 
 <p align="center">
-  <img src="https://downloader.disk.yandex.ru/preview/0343545d512250137c3bdc3423f1d21df7bca62cc3e02a2cec14df5b93fa34b6/6396740c/WuFJd0eq6v6r3jTex6fp2F2GGovj4dWvKGz9Ags2nTLNgnDISPqLY4qWOsSzuD--NbFHbc2gmLilEsI-W-LtmA%3D%3D?uid=0&filename=768.png&disposition=inline&hash=&limit=0&content_type=image%2Fpng&owner_uid=0&tknv=v2&size=1918x1970" width="350" title="hover text">
-  <img src="https://disk.yandex.ru/i/sq6KTu90Lr50uw" width="350" alt="accessibility text">
+  <img src="https://downloader.disk.yandex.ru/preview/007dbf061b3d274a59a273036b79d44718d36ae08d022f42dfc96efe377deefc/63967573/0Lpy2mAZxkYJNnZ0WYPbMpqe7fenQ_HjR8cELHihSwnuS2vBhFF-2fSt9I6uBKYZH7zEOOATEH9U3HpQRvXfgA%3D%3D?uid=0&filename=1100.png&disposition=inline&hash=&limit=0&content_type=image%2Fpng&owner_uid=0&tknv=v2&size=2048x2048" width="350" title="Main">
+  <img src="https://downloader.disk.yandex.ru/preview/fba5d3bc1318404edb12800a3de9d477b4683efc63f529b1574e55f4426e55d9/63967571/WuFJd0eq6v6r3jTex6fp2F2GGovj4dWvKGz9Ags2nTLNgnDISPqLY4qWOsSzuD--NbFHbc2gmLilEsI-W-LtmA%3D%3D?uid=0&filename=768.png&disposition=inline&hash=&limit=0&content_type=image%2Fpng&owner_uid=0&tknv=v2&size=2048x2048" width="350" alt="768">
+  <img src="https://downloader.disk.yandex.ru/preview/0b20a16e83dcbbebf8a42b23b2fa2e665f25a9be0e19e9ff2c9958e398505121/63967572/5-tLKgnP7xlQCNvz7JJ3k9o3FD-_7w69pjH8jceq2aNHq84wxdDdRzyNJHLkEJ7HuCdB6qcZ4u6kao-rcCh2vA%3D%3D?uid=0&filename=480.png&disposition=inline&hash=&limit=0&content_type=image%2Fpng&owner_uid=0&tknv=v2&size=2048x2048" width="350" alt="480">
 </p>
-
-<!-- ![alt text](https://disk.yandex.ru/i/sq6KTu90Lr50uw) -->
-
-<!-- <p align='center'>
-  <img src='https://disk.yandex.ru/i/sq6KTu90Lr50uw' width='64%'>
-  <img src='https://disk.yandex.ru/i/QswtB9KMXVsKGA' width='33%'>
-  <img src='https://disk.yandex.ru/i/M_W-rhAR08p1Tg' width='43%'>
-</p> -->
 
 [**Демо**](https://filimonich.github.io/project_october)
 
