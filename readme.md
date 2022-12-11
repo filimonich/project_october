@@ -11,7 +11,12 @@
 + SVG
 + Flexbox
 
-![alt text](https://disk.yandex.ru/i/sq6KTu90Lr50uw)
+<p align="center">
+  <img src="https://disk.yandex.ru/i/QswtB9KMXVsKGA" width="350" title="hover text">
+  <img src="https://disk.yandex.ru/i/sq6KTu90Lr50uw" width="350" alt="accessibility text">
+</p>
+
+<!-- ![alt text](https://disk.yandex.ru/i/sq6KTu90Lr50uw) -->
 
 <!-- <p align='center'>
   <img src='https://disk.yandex.ru/i/sq6KTu90Lr50uw' width='64%'>
@@ -22,7 +27,7 @@
 [**Демо**](https://filimonich.github.io/project_october)
 
 ## Чтобы развернуть проект необходимо:
-> Перед установкой зависимостей и запуском проекта убедитесь, что у вас установлена [последняя версия Node.js & NPM](https://nodejs.org/en/download/current/)
+> Перед установкой зависимостей и запуском проекта убедитесь, что у вас установлена [последняя версия Node.js & NPM](https://nodejs.org/en/)
 
 ```sh
 $ git clone https://github.com/filimonich/project_october.git
