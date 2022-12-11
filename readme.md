@@ -12,7 +12,7 @@
 + Flexbox
 
 <p align="center">
-  <img src="https://disk.yandex.ru/i/QswtB9KMXVsKGA" width="350" title="hover text">
+  <img src="https://downloader.disk.yandex.ru/preview/0343545d512250137c3bdc3423f1d21df7bca62cc3e02a2cec14df5b93fa34b6/6396740c/WuFJd0eq6v6r3jTex6fp2F2GGovj4dWvKGz9Ags2nTLNgnDISPqLY4qWOsSzuD--NbFHbc2gmLilEsI-W-LtmA%3D%3D?uid=0&filename=768.png&disposition=inline&hash=&limit=0&content_type=image%2Fpng&owner_uid=0&tknv=v2&size=1918x1970" width="350" title="hover text">
   <img src="https://disk.yandex.ru/i/sq6KTu90Lr50uw" width="350" alt="accessibility text">
 </p>
 
