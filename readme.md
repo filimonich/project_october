@@ -12,9 +12,9 @@
 + Flexbox
 
 <p align="center">
-<a href="https://ibb.co/thVjR3w"><img src="https://i.ibb.co/JdD6ZCW/Main-1100.webp" alt="Main-1100" border="0" width="540"></a>
-<a href="https://ibb.co/TK8dMq5"><img src="https://i.ibb.co/XysMxkT/Tablets-768.webp" alt="Tablets-768" border="0" width="230"></a>
-<a href="https://ibb.co/qMQKzTv"><img src="https://i.ibb.co/pvFcgYS/Phones-480.webp" alt="Phones-480" border="0" width="160"></a>
+<a href="https://ibb.co/thVjR3w"><img src="https://i.ibb.co/JdD6ZCW/Main-1100.webp" alt="Main-1100" border="0" width="460"></a>
+<a href="https://ibb.co/TK8dMq5"><img src="https://i.ibb.co/XysMxkT/Tablets-768.webp" alt="Tablets-768" border="0" width="200"></a>
+<a href="https://ibb.co/qMQKzTv"><img src="https://i.ibb.co/pvFcgYS/Phones-480.webp" alt="Phones-480" border="0" width="120"></a>
 </p>
 
 [**Демо**](https://filimonich.github.io/project_october)
