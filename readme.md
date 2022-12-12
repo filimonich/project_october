@@ -12,9 +12,9 @@
 + Flexbox
 
 <p align="center">
-  <img src="https://downloader.disk.yandex.ru/preview/007dbf061b3d274a59a273036b79d44718d36ae08d022f42dfc96efe377deefc/63967573/0Lpy2mAZxkYJNnZ0WYPbMpqe7fenQ_HjR8cELHihSwnuS2vBhFF-2fSt9I6uBKYZH7zEOOATEH9U3HpQRvXfgA%3D%3D?uid=0&filename=1100.png&disposition=inline&hash=&limit=0&content_type=image%2Fpng&owner_uid=0&tknv=v2&size=2048x2048" width="550" title="Main">
-  <img src="https://downloader.disk.yandex.ru/preview/fba5d3bc1318404edb12800a3de9d477b4683efc63f529b1574e55f4426e55d9/63967571/WuFJd0eq6v6r3jTex6fp2F2GGovj4dWvKGz9Ags2nTLNgnDISPqLY4qWOsSzuD--NbFHbc2gmLilEsI-W-LtmA%3D%3D?uid=0&filename=768.png&disposition=inline&hash=&limit=0&content_type=image%2Fpng&owner_uid=0&tknv=v2&size=2048x2048" width="240" alt="768">
-  <img src="https://downloader.disk.yandex.ru/preview/0b20a16e83dcbbebf8a42b23b2fa2e665f25a9be0e19e9ff2c9958e398505121/63967572/5-tLKgnP7xlQCNvz7JJ3k9o3FD-_7w69pjH8jceq2aNHq84wxdDdRzyNJHLkEJ7HuCdB6qcZ4u6kao-rcCh2vA%3D%3D?uid=0&filename=480.png&disposition=inline&hash=&limit=0&content_type=image%2Fpng&owner_uid=0&tknv=v2&size=2048x2048" width="170" alt="480">
+<a href="https://ibb.co/thVjR3w"><img src="https://i.ibb.co/JdD6ZCW/Main-1100.webp" alt="Main-1100" border="0" width="550"></a>
+<a href="https://ibb.co/TK8dMq5"><img src="https://i.ibb.co/XysMxkT/Tablets-768.webp" alt="Tablets-768" border="0" width="240"></a>
+<a href="https://ibb.co/qMQKzTv"><img src="https://i.ibb.co/pvFcgYS/Phones-480.webp" alt="Phones-480" border="0" width="170"></a>
 </p>
 
 [**Демо**](https://filimonich.github.io/project_october)
@@ -40,4 +40,3 @@ $ npm i
 ```sh
 $ npm run имя_скрипта
 ```
- 
