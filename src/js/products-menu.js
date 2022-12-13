@@ -22,9 +22,4 @@ function Accordeon(selector) {
   });
 }
 
-// $(".").on("click", e => {
-//   e.preventDefault();
-//   $('.products-menu__item').removeClass('products-active');
-// })
-
 new Accordeon('#products-m');

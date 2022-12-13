@@ -54,27 +54,17 @@ progress.addEventListener('input', function () {
 });
 
 
-// заводим переменную "текущего значения громкости"
 var currentVolume;
-// начинаем обрабатывать клики по кнопке громкости
+
 volumeIcon.addEventListener('click', function () {
-  // если в момент клика громкость выключена
   if (video.volume === 0) {
-    // выставляем громкость в "текущее значение громкости"
     video.volume = currentVolume/100;
-    // обновляем ползунок
     volume.value = currentVolume;
-    // применяем стили к кнопке на которую нажали
     this.style.fill = 'white';
-    // иначе, если громкость в момент клика включена
   } else {
-    // записываем в "текущее значение громкости" текущую громкость с ползунка
     currentVolume = volume.value;
-    // громкость видео выставляем в ноль
     video.volume = 0;
-    // ползунок выставляем в ноль
     volume.value = 0;
-    // применяем стили к кнопке на которую нажали
     this.style.fill = 'red';
   }
 })
