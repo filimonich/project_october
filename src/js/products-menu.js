@@ -1,10 +1,10 @@
 function Accordeon(selector) {
   const acco = document.querySelector(selector);
-  const items = acco.querySelector('[accordeon-list]').children;
+  const items = acco.querySelector('.accordeon-list').children;
 
   acco.addEventListener('click', function(e) {
       e.preventDefault();
-      const target = e.target.closest('[accordeon-trigger]');
+      const target = e.target.closest('.accordeon-trigger');
 
       if (!target) return;
       
