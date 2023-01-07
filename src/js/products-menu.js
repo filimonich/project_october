@@ -1,6 +1,6 @@
 function Accordeon(selector) {
   const acco = document.querySelector(selector);
-  const items = acco.querySelector(".accordeon-list").children;
+  const items = acco.querySelector(".products-menu").children;
 
   acco.addEventListener("click", function (e) {
     e.preventDefault();
@@ -13,8 +13,8 @@ function Accordeon(selector) {
     if (item.classList.contains("products-active")) {
       item.classList.remove("products-active");
     } else {
-      for (let i = 0; i < item.length; i++) {
-        item[i].classList.remove("products-active");
+      for (let i = 0; i < items.length; i++) {
+        items[i].classList.remove("products-active");
       }
       item.classList.add("products-active");
     }
