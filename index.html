@@ -605,9 +605,10 @@
               <ul class="reviews__list">
                 <li class="reviews__item reviews__item--active" data-linked-with="one">
                   <picture class="reviews__avatar">
+                    <source srcset="./image/pics/rewiews/Billie-480.png" media="(max-width: 480px)">
                     <source srcset="./image/pics/rewiews/Billie-768.png" media="(max-width: 768px)">
                     <source srcset="./image/pics/rewiews/Billie.png">
-                    <img src="./image/pics//pics/rewiews/Billie.png" alt="avatar Billie" class="reviews__avatar-img">
+                    <img src="./image/pics/rewiews/Billie.png" alt="avatar Billie" class="reviews__avatar-img">
                   </picture>
                   <article class="reviews__content">
                     <h3 class="reviews__title">Отличный звук</h3>
@@ -624,6 +625,7 @@
                 </li>
                 <li class="reviews__item" data-linked-with="two">
                   <picture class="reviews__avatar">
+                    <source srcset="./image/pics/rewiews/Vadim-480.png" media="(max-width: 480px)">
                     <source srcset="./image/pics/rewiews/Vadim-768.png" media="(max-width: 768px)">
                     <source srcset="./image/pics/rewiews/Vadim.png">
                     <img src="./image/pics/rewiews/Vadim.png" alt="avatar Vadim" class="reviews__avatar-img">
@@ -642,6 +644,7 @@
                 </li>
                 <li class="reviews__item" data-linked-with="three">
                   <picture class="reviews__avatar">
+                    <source srcset="./image/pics/rewiews/Maria-480.png" media="(max-width: 480px)">
                     <source srcset="./image/pics/rewiews/Maria-768.png" media="(max-width: 768px)">
                     <source srcset="./image/pics/rewiews/Maria.png">
                     <img src="./image/pics/rewiews/Maria.png" alt="avatar Maria" class="reviews__avatar-img">
@@ -663,19 +666,25 @@
             </div>
             <ul class="reviews__switcher">
               <li class="reviews__switcher-item reviews__item--active">
-                <a class="reviews__switcher-link" data-open="one">
-                  <img src="./image/pics/rewiews/Billie-768.png" alt="avatar Billie" class="reviews__switcher-img">
-                </a>
+                <picture class="reviews__switcher-link" data-open="one">
+                  <source srcset="./image/pics/rewiews/Billie-768.png" media="(max-width: 768px)">
+                  <source srcset="./image/pics/rewiews/Billie-480.png">
+                  <img src="./image/pics/rewiews/Billie-480.png" alt="avatar Billie" class="reviews__switcher-img">
+                </picture>
               </li>
               <li class="reviews__switcher-item">
-                <a class="reviews__switcher-link" data-open="two">
-                  <img src="./image/pics/rewiews/Vadim-768.png" alt="avatar Vadim" class="reviews__switcher-img">
-                </a>
+                <picture class="reviews__switcher-link" data-open="two">
+                  <source srcset="./image/pics/rewiews/Vadim-768.png" media="(max-width: 768px)">
+                  <source srcset="./image/pics/rewiews/Vadim-480.png">
+                  <img src="./image/pics/rewiews/Vadim-480.png" alt="avatar Vadim" class="reviews__switcher-img">
+                </picture>
               </li>
               <li class="reviews__switcher-item">
-                <a class="reviews__switcher-link" data-open="three">
-                  <img src="./image/pics/rewiews/Maria-768.png" alt="avatar Maria" class="reviews__switcher-img">
-                </a>
+                <picture class="reviews__switcher-link" data-open="three">
+                  <source srcset="./image/pics/rewiews/Maria-768.png" media="(max-width: 768px)">
+                  <source srcset="./image/pics/rewiews/Maria-480.png">
+                  <img src="./image/pics/rewiews/Maria-480.png" alt="avatar Maria" class="reviews__switcher-img">
+                </picture>
               </li>
             </ul>
           </div>
