@@ -1,10 +1,10 @@
-const findBlockByAlias = alias => {
+const findBlockByAlias = (alias) => {
   return $(".reviews__item").filter((ndx, item) => {
     return $(item).attr("data-linked-with") == alias;
-  })
+  });
 };
 
-$(".reviews__switcher-link").click((e) => {
+$(".reviews__switcher-link").on("click", (e) => {
   e.preventDefault();
 
   const $this = $(e.currentTarget);
@@ -12,6 +12,12 @@ $(".reviews__switcher-link").click((e) => {
   const itemToShow = findBlockByAlias(target);
   const curItem = $this.closest(".reviews__switcher-item");
 
-  itemToShow.addClass("reviews__item--active").siblings().removeClass("reviews__item--active");
-  curItem.addClass("reviews__item--active").siblings().removeClass("reviews__item--active");
+  itemToShow
+    .addClass("reviews__item--active")
+    .siblings()
+    .removeClass("reviews__item--active");
+  curItem
+    .addClass("reviews__item--active")
+    .siblings()
+    .removeClass("reviews__item--active");
 });
