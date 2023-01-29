@@ -21,32 +21,32 @@ const countSectionPosition = (sectionEq) => {
   return position;
 };
 
-const performTransition = sectionEq => {
-  if(inScroll == false) {
-      inScroll = true;
-      const position = countSectionPosition(sectionEq);
-      
-      display.css({
-          transform: `translateY(${position}%)`
-      });
-      
-      section.eq(sectionEq).addClass("active").siblings().removeClass("active");
-      
-      setTimeout(() => {
-          inScroll = false;
-  
-          sideMenu
-          .find(".fixed-menu__item")
-          .eq(sectionEq)
-          .addClass("fixed-menu__item--active")
-          .siblings()
-          .removeClass("fixed-menu__item--active");
-      }, 1300);
+const performTransition = (sectionEq) => {
+  if (inScroll == false) {
+    inScroll = true;
+    const position = countSectionPosition(sectionEq);
+
+    display.css({
+      transform: `translateY(${position}%)`,
+    });
+
+    section.eq(sectionEq).addClass("active").siblings().removeClass("active");
+
+    setTimeout(() => {
+      inScroll = false;
+
+      sideMenu
+        .find(".fixed-menu__item")
+        .eq(sectionEq)
+        .addClass("fixed-menu__item--active")
+        .siblings()
+        .removeClass("fixed-menu__item--active");
+    }, 1300);
   }
-  };
+};
 
 const viewportScroller = () => {
-  const activeSection = section.filter(".active")
+  const activeSection = section.filter(".active");
   const nextSection = activeSection.next();
   const prevSection = activeSection.prev();
 
@@ -64,20 +64,20 @@ const viewportScroller = () => {
   };
 };
 
-$(window).on("wheel", e => {
+$(window).on("wheel", (e) => {
   const deltaY = e.originalEvent.deltaY;
   const scroller = viewportScroller();
 
   if (deltaY > 0) {
     scroller.next();
   }
-  
+
   if (deltaY < 0) {
     scroller.prev();
   }
 });
 
-$(window).on("keydown", e => {
+$(window).on("keydown", (e) => {
   const tagName = e.target.tagName.toLowerCase();
   const userTypingInInputs = tagName == "input" || tagName == "textarea";
   const scroller = viewportScroller();
@@ -88,18 +88,19 @@ $(window).on("keydown", e => {
     case 38:
       scroller.prev();
       break;
-      
+
     case 40:
-      scroller.next();    
+      scroller.next();
       break;
   }
 });
 
-$(".wrapper").on("touchmove", e => e.preventDefault());
+$(".wrapper").on("touchmove", (e) => e.preventDefault());
 
-$("[data-scroll-to]").click(e => {
+// $("[data-scroll-to]").click(e => {
+$("[data-scroll-to]").on("click", (e) => {
   e.preventDefault();
-  
+
   const $this = $(e.currentTarget);
   const target = $this.attr("data-scroll-to");
   const reqSection = $(`[data-section-id=${target}]`);
@@ -113,11 +114,11 @@ if (isMobile) {
     swipe: function (event, direction) {
       const scroller = viewportScroller();
       let scrollDirection = "";
-      
+
       if (direction == "up") scrollDirection = "next";
       if (direction == "down") scrollDirection = "prev";
-      
+
       scroller[scrollDirection]();
     },
   });
-};
+}
