@@ -11,7 +11,7 @@ const validatefields = (form, fieldsArray) => {
   return errorFields.length == 0;
 };
 
-$(".form").submit((e) => {
+$(".form").on("submit", (e) => {
   e.preventDefault();
 
   const form = $(e.currentTarget);

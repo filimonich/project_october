@@ -2,12 +2,10 @@ const openItem1 = (item) => {
   const container = item.closest(".team__item");
   const contentBlock = container.find(".team__content");
   const textBlock = contentBlock.find(".team__content-block");
-  // const reqWidth = textBlock.width();
   const reqHeight = textBlock.height();
 
   container.addClass("team__content--active");
   contentBlock.height(reqHeight);
-  // contentBlock.width(reqWidth);
 };
 
 const closeEveryItem = (container) => {
@@ -16,7 +14,6 @@ const closeEveryItem = (container) => {
 
   itemContainer.removeClass("team__content--active");
   item.height(0);
-  // item.width(0);
 };
 
 $(".team__title").on("click", (e) => {
