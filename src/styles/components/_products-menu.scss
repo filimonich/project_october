@@ -34,6 +34,7 @@
     color: $white;
     transform: rotate(-90deg) translateX(55%) translateY(-8%);
     white-space: nowrap;
+    cursor: default;
   }
 
   &__content {
