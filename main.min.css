@@ -2171,13 +2171,14 @@ body.compensate-for-scrollbar {
   color: #FFFFFF;
   transform: rotate(-90deg) translateX(55%) translateY(-8%);
   white-space: nowrap;
+  cursor: default;
 }
 .products-menu__content {
   background: rgba(51, 53, 55, 0.9);
-  max-width: 0;
+  width: 0;
   position: relative;
   overflow: hidden;
-  transition: max-width 0.7s;
+  transition: width 0.7s;
   z-index: -1;
 }
 .products-menu__container {
@@ -2201,11 +2202,11 @@ body.compensate-for-scrollbar {
 }
 
 .products-active > .products-menu__content {
-  max-width: 27.125rem;
+  width: 27.125rem;
 }
 @media screen and (max-width: 48rem) {
   .products-active > .products-menu__content {
-    width: calc(100vw - 16.9rem);
+    width: calc(100vw - 18.9rem);
   }
 }
 @media screen and (max-width: 30rem) {
