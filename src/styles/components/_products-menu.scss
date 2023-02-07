@@ -38,10 +38,10 @@
 
   &__content {
     background: rgba(51, 53, 55, 0.9);
-    max-width: 0;
+    width: 0;
     position: relative;
     overflow: hidden;
-    transition: max-width .7s;
+    transition: width .7s;
     z-index: -1;
   }
 
@@ -63,10 +63,10 @@
 }
 
 .products-active>.products-menu__content {
-  max-width: 27.125rem;
+  width: 27.125rem;
 
   @include tablets {
-    width: calc(100vw - 16.9rem);
+    width: calc(100vw - 18.9rem);
   }
 
   @include phones {
