@@ -3042,7 +3042,7 @@ section {
 
 .wrapper__main {
   min-height: 100%;
-  transition: transform 1s;
+  transition: transform 2s;
   will-change: transform;
 }
 
