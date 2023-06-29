@@ -26,6 +26,7 @@
     align-items: center;
     margin-right: 1.25rem;
     max-width: 28.375rem;
+    position: relative;
 
     @include tablets {
       flex: initial;
